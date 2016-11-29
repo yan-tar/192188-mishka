@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Мишка</title>
+  </head>
+<body>
+  <header class="page-header">
+    <div class="page-header__logo"><img src="http://placehold.it/86x35" width="86" height="35"></div>
+    <div class="page-header__menu-btn"><a href="#"></a></div>
+  </header>
+  <h1 class="page-title">Вязание на заказ</h1>
+  <section class="order-knit">
+    <p>Мы будем рады воплотить в&nbsp;жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с&nbsp;вами, чтобы уточнить детали.</p>
+    <form class="order-knit__form">
+      <fieldset class="order-knit__field-type">
+        <legend>тип</legend>
+        <input type="radio" value="1" id="pr-type-1" checked>
+        <label class="order-knit__product-type order-knit__product-type--checked"  for="pr-type-1">Аксессуар для&nbsp;интерьера</label>
+        <input type="radio" value="2" id="pr-type-2">
+        <label class="order-knit__product-type" for="pr-type-2">Детская игрушка</label>
+      </fieldset>
+      <fieldset class="order-knit__field-color">
+        <legend>цвет</legend>
+        <input type="checkbox" value="white" id="pr-color-1" checked><label class="order-knit__product-color order-knit__field-color--checked" for="pr-color-1">Белый</label>
+        <input type="checkbox" value="gray" id="pr-color-2" checked><label class="order-knit__product-color order-knit__field-color--checked" for="pr-color-2">Серый</label>
+        <input type="checkbox" value="tiffany" id="pr-color-3"><label class="order-knit__product-color" for="pr-color-3">&laquo;Тиффани&raquo;</label>
+        <input type="checkbox" value="black" id="pr-color-4"><label class="order-knit__product-color" for="pr-color-4">Черный</label>
+        <input type="checkbox" value="pink" id="pr-color-5"><label class="order-knit__product-color" for="pr-color-5">Розовый</label>
+        <input type="checkbox" value="white" id="pr-color-6"><label class="order-knit__product-color" for="pr-color-6">Оранжевый</label>
+      </fieldset>
+      <fieldset class="order-knit__field-name">
+        <legend>ФИО</legend>
+        <label class="order-knit__personal-label order-knit__personal-label--required" for="yourname">Имя:</label>
+        <input class="order-knit__personal-text" type="text" id="yourname" placeholder="Введите ваше имя *" required>
+        <label class="order-knit__personal-label order-knit__personal-label--required" for="surname">Имя:</label>
+        <input class="order-knit__personal-text" type="text" id="surname" placeholder="Укажите фамилию *" required>
+        <label class="order-knit__personal-label" for="middlename">Имя:</label>
+        <input class="order-knit__personal-text" type="text" id="middlename" placeholder="Отчество, если желаете">
+      </fieldset>
+      <fieldset class="order-knit__field-tel">
+        <legend>тел</legend>
+        <input class="order-knit__tel order-knit__text" type="text" id="phone" placeholder="+7 XXX XX XX*" required>
+      </fieldset>
+      <fieldset class="order-knit__field-email">
+        <legend>e-mail</legend>
+        <input class="order-knit__email order-knit__text" type="email" id="email" placeholder="Ваш Email*" required>
+      </fieldset>
+      <fieldset class="order-knit__field-dop">
+        <legend>доп</legend>
+        <textarea class="order-knit__textarea" placeholder="Опишите все ваши пожелания к заказу" id="dop"></textarea>
+      </fieldset>
+      <div class="order-knit__prim">*Поля обязательны для заполнения</div>
+      <button class="button order-knit__btn">отправить заказ</button>
+    </form>
+  </section>
+  <footer class="page-footer">
+    <div class="page-footer__social">
+      <img class="page-footer__insta" src="http://placehold.it/22x21" width="22" height="21" alt="Instagram">
+      <img class="page-footer__fb" src="http://placehold.it/15x29" width="15" height="29" alt="Facebook">
+      <img class="page-footer__twi" src="http://placehold.it/24x20" width="24" height="20" alt="Twitter">
+    </div>
+    <div class="page-footer__copyright">Разработано <a href="#"><img class="page-footer__academy-logo" src="http://placehold.it/27x34" width="27" height="34" alt="HTML Academy"></a></div>
+  </footer>
+</body>
+</html>
