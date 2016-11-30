@@ -2,61 +2,64 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>HTML Academy: Мишка&nbsp;&ndash; Каталог</title>
 </head>
 <body>
   <header class="page-header">
-    <div class="page-header__logo"><img src="" width="86" height="35"></div>
+    <div class="page-header__logo"><img src="" width="86" height="35" alt="Логотип"></div>
     <div class="page-header__menu-btn"><a href="#"></a></div>
   </header>
-  <h1 class="page-title">Каталог товаров</h1>
-  <ul class="catalog-list">
-    <li class="catalog-list__item">
-      <img class="catalog-list__pic" src="http://placehold.it/260x195" alt="Зайчик-попрыгайчик" width="260" height="195" />
-      <section class="catalog-list__desc">
-        <h2 class="catalog-list__title">Зайчик-попрыгайчик</h2>
-        <p>Рост 30&nbsp;см, вес 200&nbsp;г</p>
-        <div class="catalog-list__price-block">
-          <span class="catalog-list__price">1&nbsp;200&nbsp;руб.</span>
-          <img class="catalog-list__cart catalog-list__cart--empty" />
-        </div>
-      </section>
-    </li>
-    <li class="catalog-list__item">
-      <img class="catalog-list__pic" src="http://placehold.it/260x195" alt="Корзинка для белья" width="260" height="195" />
-      <section class="catalog-list__desc">
-        <h2 class="catalog-list__title">Корзинка для белья</h2>
-        <p>Диаметр 15&nbsp;, высота 10&nbsp;см</p>
-        <div class="catalog-list__price-block">
-          <span class="catalog-list__price">690&nbsp;руб.</span>
-          <img class="catalog-list__cart catalog-list__cart--empty" />
-        </div>
-      </section>
-    </li>
-    <li class="catalog-list__item">
-      <img class="catalog-list__pic" src="http://placehold.it/260x195" alt="Большая корзинка для игрушек" width="260" height="195" />
-      <section class="catalog-list__desc">
-        <h2 class="catalog-list__title">Большая корзинка для игрушек</h2>
-        <p>Диаметр 30&nbsp;, высота 30&nbsp;см</p>
-        <div class="catalog-list__price-block">
-          <span class="catalog-list__price">1&nbsp;500&nbsp;руб.</span>
-          <img class="catalog-list__cart catalog-list__cart--empty" />
-        </div>
-      </section>
-    </li>
-    <li class="catalog-list__process">
-      <h2 class="catalog-list__video-title">Процесс производства</h2>
-      <video class="catalog-list__video" poster="http://placehold.it/260x195" width="260" height="195">
-        <source src="" type="video/mp4">
-        <source src="" type="video/ogg">
-        <source src="" type="video/webm">
-      </video>
-      <p class="catalog-list__video-desc">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.</p>
-    </li>
-    <li class="catalog-list__order">
-      <button class="catalog-list__order-btn button">сделать заказ</button>
-    </li>
-  </ul>
+  <main class="page-content">
+    <h1 class="page-content__title">Каталог товаров</h1>
+    <ul class="catalog-list">
+      <li class="catalog-list__item">
+        <a href="page.html"><img class="catalog-list__pic" src="http://placehold.it/260x195" alt="Зайчик-попрыгайчик" width="260" height="195" /></a>
+        <section class="catalog-list__desc">
+          <h2 class="catalog-list__title"><a href="page.html">Зайчик-попрыгайчик</a></h2>
+          <p>Рост 30&nbsp;см, вес 200&nbsp;г</p>
+          <div class="catalog-list__price-block">
+            <span class="catalog-list__price">1&nbsp;200&nbsp;руб.</span>
+            <a href="page.html"><img class="catalog-list__cart catalog-list__cart--empty" /></a>
+          </div>
+        </section>
+      </li>
+      <li class="catalog-list__item">
+        <a href="page.html"><img class="catalog-list__pic" src="http://placehold.it/260x195" alt="Корзинка для белья" width="260" height="195" /></a>
+        <section class="catalog-list__desc">
+          <h2 class="catalog-list__title"><a href="page.html">Корзинка для белья</a></h2>
+          <p>Диаметр 15&nbsp;, высота 10&nbsp;см</p>
+          <div class="catalog-list__price-block">
+            <span class="catalog-list__price">690&nbsp;руб.</span>
+            <a href="page.html"><img class="catalog-list__cart catalog-list__cart--empty" /></a>
+          </div>
+        </section>
+      </li>
+      <li class="catalog-list__item">
+        <a href="page.html"><img class="catalog-list__pic" src="http://placehold.it/260x195" alt="Большая корзинка для игрушек" width="260" height="195" /></a>
+        <section class="catalog-list__desc">
+          <h2 class="catalog-list__title"><a href="page.html">Большая корзинка для игрушек</a></h2>
+          <p>Диаметр 30&nbsp;, высота 30&nbsp;см</p>
+          <div class="catalog-list__price-block">
+            <span class="catalog-list__price">1&nbsp;500&nbsp;руб.</span>
+            <a href="page.html"><img class="catalog-list__cart catalog-list__cart--empty" /></a>
+          </div>
+        </section>
+      </li>
+      <li class="catalog-list__process">
+        <h2 class="catalog-list__video-title">Процесс производства</h2>
+        <video class="catalog-list__video" poster="http://placehold.it/260x195" width="260" height="195">
+          <source src="" type="video/mp4">
+          <source src="" type="video/ogg">
+          <source src="" type="video/webm">
+        </video>
+        <p class="catalog-list__video-desc">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.</p>
+      </li>
+      <li class="catalog-list__order">
+        <a href="page.html" class="catalog-list__order-btn button">сделать заказ</a>
+      </li>
+    </ul>
+  </main>
   <footer class="page-footer">
     <div class="page-footer__social">
       <img class="page-footer__insta" src="http://placehold.it/22x21" width="22" height="21" alt="Instagram">
