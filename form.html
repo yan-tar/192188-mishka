@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>HTML Academy: Мишка&nbsp;&ndash; Форма заказа</title>
+  </head>
+<body>
+  <header class="page-header">
+    <div class="page-header__logo"><img src="http://placehold.it/86x35" width="86" height="35" alt="Логотип"></div>
+    <div class="page-header__menu-btn"><a href="#"></a></div>
+  </header>
+  <main class="page-content">
+    <h1 class="page-content__title">Вязание на заказ</h1>
+    <section class="order-knit">
+      <p class="order-knit__simple-text">Мы будем рады воплотить в&nbsp;жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с&nbsp;вами, чтобы уточнить детали.</p>
+      <form class="order-knit__form" action="echo.htmlacademy.ru" и method="">
+        <fieldset class="order-knit__form-group order-knit__form-group--type">
+          <legend class="order-knit__legend">тип</legend>
+          <input type="radio" value="1" id="product-type-interier" name="order-knit__product-type" checked>
+          <label class="order-knit__product-type order-knit__product-type--checked"  for="product-type-interier">Аксессуар для&nbsp;интерьера</label>
+          <input type="radio" value="2" id="product-type-toy" name="order-knit__product-type">
+          <label class="order-knit__product-type" for="product-type-toy">Детская игрушка</label>
+        </fieldset>
+        <fieldset class="order-knit__form-group order-knit__form-group--color">
+          <legend class="order-knit__legend">цвет</legend>
+          <input type="checkbox" value="white" id="white"  name="order-knit__product-color" checked>
+          <label class="order-knit__product-color order-knit__field-color--checked" for="white">Белый</label>
+          <input type="checkbox" value="gray" id="gray"  name="order-knit__product-color" checked>
+          <label class="order-knit__product-color order-knit__field-color--checked" for="gray">Серый</label>
+          <input type="checkbox" value="tiffany" id="tiffany" name="order-knit__product-color">
+          <label class="order-knit__product-color" for="tiffany">&laquo;Тиффани&raquo;</label>
+          <input type="checkbox" value="black" id="black" name="order-knit__product-color">
+          <label class="order-knit__product-color" for="black">Черный</label>
+          <input type="checkbox" value="pink" id="pink" name="order-knit__product-color">
+          <label class="order-knit__product-color" for="pink">Розовый</label>
+          <input type="checkbox" value="orange" id="orange" name="order-knit__product-color">
+          <label class="order-knit__product-color" for="orange">Оранжевый</label>
+        </fieldset>
+        <fieldset class="order-knit__form-group order-knit__form-group--name">
+          <legend class="order-knit__legend">ФИО</legend>
+          <label class="order-knit__personal-label order-knit__personal-label--required" for="yourname">Имя:</label>
+          <input class="order-knit__personal-text" type="text" id="yourname" placeholder="Введите ваше имя *" required>
+          <label class="order-knit__personal-label order-knit__personal-label--required" for="surname">Имя:</label>
+          <input class="order-knit__personal-text" type="text" id="surname" placeholder="Укажите фамилию *" required>
+          <label class="order-knit__personal-label" for="middlename">Имя:</label>
+          <input class="order-knit__personal-text" type="text" id="middlename" placeholder="Отчество, если желаете">
+        </fieldset>
+        <fieldset class="order-knit__form-group order-knit__form-group--tel">
+          <legend class="order-knit__legend">тел</legend>
+          <input class="order-knit__tel order-knit__text" type="tel" id="phone" placeholder="+7 XXX XX XX*" required>
+        </fieldset>
+        <fieldset class="order-knit__form-group order-knit__form-group--email">
+          <legend class="order-knit__legend">e-mail</legend>
+          <input class="order-knit__email order-knit__text" type="email" id="email" placeholder="Ваш Email*" required>
+        </fieldset>
+        <fieldset class="order-knit__form-group order-knit__form-group--dop">
+          <legend class="order-knit__legend">доп</legend>
+          <textarea class="order-knit__textarea" placeholder="Опишите все ваши пожелания к заказу" id="dop"></textarea>
+        </fieldset>
+        <div class="order-knit__prim">*Поля обязательны для заполнения</div>
+        <button class="button order-knit__btn" type="submit">отправить заказ</button>
+      </form>
+    </section>
+  </main>
+  <footer class="page-footer">
+    <div class="page-footer__social">
+      <img class="page-footer__insta" src="http://placehold.it/22x21" width="22" height="21" alt="Instagram">
+      <img class="page-footer__fb" src="http://placehold.it/15x29" width="15" height="29" alt="Facebook">
+      <img class="page-footer__twi" src="http://placehold.it/24x20" width="24" height="20" alt="Twitter">
+    </div>
+    <div class="page-footer__copyright">Разработано <a href="#"><img class="page-footer__academy-logo" src="http://placehold.it/27x34" width="27" height="34" alt="HTML Academy"></a></div>
+  </footer>
+</body>
+</html>
