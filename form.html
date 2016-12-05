@@ -4,11 +4,22 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Мишка&nbsp;&ndash; Форма заказа</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
   </head>
-<body>
+<body class="mishka-body">
   <header class="page-header">
-    <div class="page-header__logo"><img src="http://placehold.it/86x35" width="86" height="35" alt="Логотип"></div>
-    <div class="page-header__menu-btn"><a href="#"></a></div>
+    <div class="page-header__logo"><img src="img/logo-mobile.svg" width="86" height="35" alt="Логотип"></div>
+    <nav class="main-nav  main-nav--closed  main-nav--nojs">
+      <button class="main-nav__toggle" type="button">Открыть меню</button>
+      <div class="main-nav__wrapper">
+        <ul class="main-nav__items">
+          <li class="main-nav__item"><a href="catalog.html">Каталог товаров</a></li>
+          <li class="main-nav__item"><a href="form.html">Вязание на заказ</a></li>
+          <li class="main-nav__item  main-nav__item--search"><a href="page.html">Поиск по сайту</a></li>
+          <li class="main-nav__item  main-nav__item--cart  main-nav__item--cart-empty"><a href="page.html">Корзина: пока пуста</a></li>
+        </ul>
+      </div>
+    </nav>
   </header>
   <main class="page-content">
     <h1 class="page-content__title">Вязание на заказ</h1>
@@ -41,9 +52,9 @@
           <legend class="order-knit__legend">ФИО</legend>
           <label class="order-knit__personal-label order-knit__personal-label--required" for="yourname">Имя:</label>
           <input class="order-knit__personal-text" type="text" id="yourname" placeholder="Введите ваше имя *" required>
-          <label class="order-knit__personal-label order-knit__personal-label--required" for="surname">Имя:</label>
+          <label class="order-knit__personal-label order-knit__personal-label--required" for="surname">Фамилия:</label>
           <input class="order-knit__personal-text" type="text" id="surname" placeholder="Укажите фамилию *" required>
-          <label class="order-knit__personal-label" for="middlename">Имя:</label>
+          <label class="order-knit__personal-label" for="middlename">Отчество:</label>
           <input class="order-knit__personal-text" type="text" id="middlename" placeholder="Отчество, если желаете">
         </fieldset>
         <fieldset class="order-knit__form-group order-knit__form-group--tel">
@@ -64,12 +75,12 @@
     </section>
   </main>
   <footer class="page-footer">
-    <div class="page-footer__social">
-      <img class="page-footer__insta" src="http://placehold.it/22x21" width="22" height="21" alt="Instagram">
-      <img class="page-footer__fb" src="http://placehold.it/15x29" width="15" height="29" alt="Facebook">
-      <img class="page-footer__twi" src="http://placehold.it/24x20" width="24" height="20" alt="Twitter">
-    </div>
-    <div class="page-footer__copyright">Разработано <a href="#"><img class="page-footer__academy-logo" src="http://placehold.it/27x34" width="27" height="34" alt="HTML Academy"></a></div>
+    <ul class="page-footer__social">
+      <li><a class="social__link  social__link--inst" href="#"></a></li>
+      <li><a class="social__link  social__link--fb" href="#"></a></li>
+      <li><a class="social__link  social__link--tw" href="#"></a></li>
+    </ul>
+    <div class="page-footer__copyright">Разработано <a href="#" target="_blank"><img class="page-footer__academy-logo" src="img/htmlacademy.svg" width="27" height="34" alt="HTML Academy"></a></div>
   </footer>
 </body>
 </html>

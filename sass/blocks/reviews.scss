@@ -1,0 +1,49 @@
+.reviews {
+  color: $main-color;
+  padding-left:$mob-pad-side;
+  padding-right:$mob-pad-side;
+  padding-bottom:16px;
+}
+
+.reviews__title{
+  @include h2-title;
+}
+
+.reviews__text blockquote {
+  margin:0;
+  font-size:15px;
+  line-height: 30px;
+}
+
+.reviews__author{
+  font-size:18px;
+  font-style:normal;
+  line-height: 30px;
+}
+.reviews__author-name{
+  color: $title-color;
+  font-family: $opensansbold;
+  font-weight: bold;
+}
+
+.reviews__nav {
+  font-size:0;
+  margin: 35px auto;
+}
+.reviews__controls {
+  display:inline-block;
+  vertical-align:middle;
+  height:52px;
+  width: 130px;
+  border:1px solid #ececec;
+
+  &--prev{
+    background:url(/img/icon-left-arrow.svg) no-repeat 50% 50%;
+  }
+
+  &--next{
+    background:url(/img/icon-right-arrow.svg) no-repeat 50% 50%;
+    margin-left:-1px;
+  }
+
+}
