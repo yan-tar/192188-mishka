@@ -3,70 +3,79 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>HTML Academy: Мишка&nbsp;&ndash; Каталог</title>
+    <title>HTML Academy: Мишка&nbsp;&ndash; Каталог</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
-<body>
+<body class="mishka-body">
   <header class="page-header">
-    <div class="page-header__logo"><img src="" width="86" height="35" alt="Логотип"></div>
-    <div class="page-header__menu-btn"><a href="#"></a></div>
+    <div class="page-header__logo"><img src="img/logo-mobile.svg" width="86" height="35" alt="Логотип"></div>
+    <nav class="main-nav  main-nav--closed  main-nav--nojs">
+      <button class="main-nav__toggle" type="button">Открыть меню</button>
+      <div class="main-nav__wrapper">
+        <ul class="main-nav__items">
+          <li class="main-nav__item"><a href="catalog.html">Каталог товаров</a></li>
+          <li class="main-nav__item"><a href="form.html">Вязание на заказ</a></li>
+          <li class="main-nav__item  main-nav__item--search"><a href="page.html">Поиск по сайту</a></li>
+          <li class="main-nav__item  main-nav__item--cart  main-nav__item--cart-empty"><a href="page.html">Корзина: пока пуста</a></li>
+        </ul>
+      </div>
+    </nav>
   </header>
   <main class="page-content">
     <h1 class="page-content__title">Каталог товаров</h1>
     <ul class="catalog-list">
       <li class="catalog-list__item">
-        <a href="page.html"><img class="catalog-list__pic" src="http://placehold.it/260x195" alt="Зайчик-попрыгайчик" width="260" height="195" /></a>
+        <a href="page.html"><img class="catalog-list__pic" src="/img/photo-1-mobile@1x.jpg" alt="Зайчик-попрыгайчик" width="260" height="195" /></a>
         <section class="catalog-list__desc">
           <h2 class="catalog-list__title"><a href="page.html">Зайчик-попрыгайчик</a></h2>
           <p>Рост 30&nbsp;см, вес 200&nbsp;г</p>
           <div class="catalog-list__price-block">
             <span class="catalog-list__price">1&nbsp;200&nbsp;руб.</span>
-            <a href="page.html"><img class="catalog-list__cart catalog-list__cart--empty" /></a>
+            <a href="page.html"><img class="catalog-list__cart catalog-list__cart--empty" src="/img/icon-cart.svg" alt="Корзина"></a>
           </div>
         </section>
       </li>
       <li class="catalog-list__item">
-        <a href="page.html"><img class="catalog-list__pic" src="http://placehold.it/260x195" alt="Корзинка для белья" width="260" height="195" /></a>
+        <a href="page.html"><img class="catalog-list__pic" src="/img/photo-2-mobile@1x.jpg" alt="Корзинка для белья" width="260" height="195" /></a>
         <section class="catalog-list__desc">
           <h2 class="catalog-list__title"><a href="page.html">Корзинка для белья</a></h2>
           <p>Диаметр 15&nbsp;, высота 10&nbsp;см</p>
           <div class="catalog-list__price-block">
             <span class="catalog-list__price">690&nbsp;руб.</span>
-            <a href="page.html"><img class="catalog-list__cart catalog-list__cart--empty" /></a>
+            <a href="page.html"><img class="catalog-list__cart catalog-list__cart--empty"  src="/img/icon-cart.svg" alt="Корзина"></a>
           </div>
         </section>
       </li>
       <li class="catalog-list__item">
-        <a href="page.html"><img class="catalog-list__pic" src="http://placehold.it/260x195" alt="Большая корзинка для игрушек" width="260" height="195" /></a>
+        <a href="page.html"><img class="catalog-list__pic" src="/img/photo-3-mobile@1x.jpg" alt="Большая корзинка для игрушек" width="260" height="195" /></a>
         <section class="catalog-list__desc">
           <h2 class="catalog-list__title"><a href="page.html">Большая корзинка для игрушек</a></h2>
           <p>Диаметр 30&nbsp;, высота 30&nbsp;см</p>
           <div class="catalog-list__price-block">
             <span class="catalog-list__price">1&nbsp;500&nbsp;руб.</span>
-            <a href="page.html"><img class="catalog-list__cart catalog-list__cart--empty" /></a>
+            <a href="page.html"><img class="catalog-list__cart catalog-list__cart--empty" src="/img/icon-cart.svg" alt="Корзина"></a>
           </div>
         </section>
       </li>
       <li class="catalog-list__process">
         <h2 class="catalog-list__video-title">Процесс производства</h2>
-        <video class="catalog-list__video" poster="http://placehold.it/260x195" width="260" height="195">
+        <video class="catalog-list__video" poster="/img/video-mobile@1x.jpg" width="260" height="150">
           <source src="" type="video/mp4">
           <source src="" type="video/ogg">
           <source src="" type="video/webm">
         </video>
         <p class="catalog-list__video-desc">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.</p>
-      </li>
-      <li class="catalog-list__order">
-        <a href="page.html" class="catalog-list__order-btn button">сделать заказ</a>
+        <a href="page.html" class="catalog-list__order-btn  button">сделать заказ</a>
       </li>
     </ul>
   </main>
   <footer class="page-footer">
     <ul class="page-footer__social">
-      <li><a class="social__link  social__link--inst" href="#">Instagram</a></li>
-      <li><a class="social__link  social__link--fb" href="#">Facebook</a></li>
-      <li><a class="social__link  social__link--tw" href="#">Twitter</a></li>
+      <li><a class="social__link  social__link--inst" href="#"></a></li>
+      <li><a class="social__link  social__link--fb" href="#"></a></li>
+      <li><a class="social__link  social__link--tw" href="#"></a></li>
     </ul>
-    <div class="page-footer__copyright">Разработано <a href="#"><img class="page-footer__academy-logo" src="http://placehold.it/27x34" width="27" height="34" alt="HTML Academy"></a></div>
+    <div class="page-footer__copyright">Разработано <a href="#" target="_blank"><img class="page-footer__academy-logo" src="img/htmlacademy.svg" width="27" height="34" alt="HTML Academy"></a></div>
   </footer>
 </body>
 </html>
