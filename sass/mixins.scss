@@ -1,0 +1,33 @@
+@mixin clearfix() {
+  &::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
+
+/*стили для всех обычных ссылок*/
+@mixin link(){
+  color:$link-color;
+  text-decoration:none;
+  &:hover {
+    color:$hover-color;
+  }
+  &:active{
+    color:$down-color;
+  }
+}
+
+@mixin fademe($link-color,$op){
+  color: rgba($link-color, $op);
+}
+
+/*стандартные заголовки второго уровня*/
+@mixin h2-title(){
+  color: $title-color;
+  margin-bottom: 10px;
+  font-family:$opensansbold;
+  font-size: 25px;
+  font-weight: bold;
+  line-height: 30px;
+}

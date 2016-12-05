@@ -1,0 +1,27 @@
+.button {
+  display:block;
+  box-sizing:border-box;
+  margin:28px 0;
+  width: 259px;
+  background-color: $main-bg;
+  border: 2px solid $main-color;
+  color: $main-color;
+  font-family: $opensansbold;
+  font-size: 17px;
+  font-weight: bold;
+  line-height: 16px;
+  text-transform: uppercase;
+  text-decoration:none;
+  text-align:center;
+  line-height:52px;
+
+  &:hover{
+    background-color: $main-color;
+    color: $main-bg;
+  }
+
+  &:active {
+    background-color: $main-color;
+    @include fademe($main-bg, 0.3);
+  }
+}

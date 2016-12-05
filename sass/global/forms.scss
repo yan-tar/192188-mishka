@@ -1,0 +1,89 @@
+fieldset {
+  border:none;
+  border-top:1px solid $accent-color;
+  padding-left:0;
+  width:260px;
+  margin-top:25px;
+  margin-left:$mob-pad-side;
+}
+
+legend {
+  color:$accent-color;
+  font-family: $opensansbold;
+  font-size: 17px;
+  font-weight: bold;
+  line-height: 16px;
+  text-transform: uppercase;
+  padding-right:25px;
+}
+
+label {
+  display:block;
+  color: $title-color;
+  font-family: $opensansbold;
+  font-size: 17px;
+  font-weight: bold;
+  line-height: 18px;
+  margin:20px 0;
+  }
+
+input[type="radio"],
+input[type="checkbox"] {
+  display:none;
+}
+
+input[type="radio"] ~label:before,
+input[type="checkbox"] ~label:before{
+    content: "";
+    display: inline-block;
+    width: 40px;
+    height: 39px;
+    margin-right: 20px;
+    vertical-align: middle;
+    border: 2px solid #4d4d4d;
+}
+
+input[type="radio"] ~ label:before {
+  box-sizing:border-box;
+  padding:3px;
+  border-radius: 50%;
+}
+
+input[type="radio"] ~ label:before {
+    background: $accent-color;
+    box-shadow: 0 0 0 0 $accent-color;
+}
+
+
+input[type="text"],
+input[type="tel"],
+input[type="email"]{
+  border:none;
+  border-bottom:1px solid #000;
+  width:260px;
+  font-size:17px;
+  line-height:54px;
+}
+
+input[type="email"]{
+  background:url(/img/icon-mail.svg) no-repeat 225px 50%;
+}
+
+input[type="tel"]{
+  background:url(/img/icon-phone.svg) no-repeat 230px 50%;
+}
+
+textarea {
+  width:260px;
+  height: 142px;
+  border: 2px solid $main-color;
+  margin-top:25px;
+  padding:17px;
+  font-size: 17px;
+  line-height: 18px;
+  box-sizing:border-box;
+}
+
+textarea[placeholder] {
+  @include fademe($main-color, 0.3);
+}

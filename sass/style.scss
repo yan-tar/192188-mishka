@@ -1,1 +1,22 @@
-body { background: red; }
+@import "normalize";
+
+@import "variables";
+@import "mixins";
+
+@import "global/fonts";
+@import "global/layout";
+@import "global/forms";
+
+@import "blocks/mishka-body.scss";
+@import "blocks/about-us.scss";
+@import "blocks/best-product.scss";
+@import "blocks/button.scss";
+@import "blocks/catalog-list.scss";
+@import "blocks/contacts.scss";
+@import "blocks/home-main.scss";
+@import "blocks/main-nav.scss";
+@import "blocks/page-content.scss";
+@import "blocks/page-footer.scss";
+@import "blocks/page-header.scss";
+@import "blocks/reviews.scss";
+@import "blocks/order-knit.scss";

@@ -1,0 +1,26 @@
+.order-knit{
+  margin-bottom:55px;
+  color:$main-color;
+}
+.order-knit__simple-text {
+  width:260px;
+  margin:30px 0 30px $mob-pad-side;
+  font-family: $opensans;
+  font-size: 13px;
+  line-height: 24px;
+}
+.order-knit__personal-label {
+  margin:20px 0 0;
+}
+
+.order-knit__prim{
+  margin-left:$mob-pad-side;
+  width:260px;
+  font-size: 14px;
+  line-height: 16px;
+}
+
+.order-knit__btn{
+  margin-left:$mob-pad-side;
+  width:260px;
+}
