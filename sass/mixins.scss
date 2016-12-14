@@ -31,3 +31,16 @@
   font-weight: bold;
   line-height: 30px;
 }
+
+@mixin container() {
+  width:320px;
+  margin:0 auto;
+
+  @media (min-width:$tablet-width){
+    width:640px;
+  }
+
+  @media (min-width:$desktop-width){
+    width:940px;
+  }
+}

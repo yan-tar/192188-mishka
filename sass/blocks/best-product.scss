@@ -1,9 +1,14 @@
 .best-product {
   color: $main-color;
-  padding-left:$mob-pad-side;
-  padding-right:$mob-pad-side;
   padding-bottom:7px;
   border-bottom: $wavy;
+}
+
+.best-product__wrapper {
+  @include container;
+  box-sizing:border-box;
+  padding-left:$mob-pad-side;
+  padding-right:$mob-pad-side;
 }
 
 .best-product__title{

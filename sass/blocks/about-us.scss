@@ -1,5 +1,10 @@
 .about-us {
   color: $main-color;
+}
+
+.about-us__wrapper {
+  @include container;
+  box-sizing:border-box;
   padding-left:$mob-pad-side;
   padding-right:$mob-pad-side;
 }

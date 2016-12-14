@@ -1,5 +1,8 @@
 .home-main {
-  width:320px;
+  background-color: #fbfbfb;
+}
+.home-main__wrapper {
+  @include container;
 }
 .home-main h1 {
   font-family:$opensansbold;
