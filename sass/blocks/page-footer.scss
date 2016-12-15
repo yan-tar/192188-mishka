@@ -1,13 +1,37 @@
 .page-footer {
   background-color: #f1f1f1;
-  padding: 30px $mob-pad-side;
+  padding: 30px 0;
+  @media (#{$tablet-width}){
+    height:84px;
+  }
+}
+
+.page-footer__wrapper{
+  @include container;
+  @media (#{$tablet-width}){
+    height: 84px;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+.page-footer__logo{
+  display:none;
+  @media (#{$tablet-width}){
+    display:block;
+  }
 }
 
 .page-footer__social {
   width: 170px;
   margin:0 auto 30px;
-  text-align:center;
   padding:0;
+
+  text-align:center;
+  @media (#{$tablet-width}){
+    margin:0;
+  }
 }
 
 .page-footer__social li {
@@ -44,6 +68,10 @@
   font-weight:bold;
   line-height:18px;
   padding-top:20px;
+  @media (#{$tablet-width}){
+    border:none;
+    padding:0;
+  }
 }
 
 .page-footer__academy-logo {

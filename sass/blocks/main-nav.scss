@@ -1,5 +1,16 @@
 .main-nav {
-  min-width:320px;
+
+  @media (#{$tablet-width}){
+    height:40px; /*временно для сетки*/
+    flex-basis:334px;
+    order:2;
+  }
+
+  @media (#{$desktop-width}){
+    height:89px;
+    flex-basis:350px;
+    order:0;
+  }
 }
 .main-nav__toggle {
   background:#fff url(/img/icon-menu-close.svg) no-repeat 50%;
@@ -11,21 +22,37 @@
   right:27px;
   overflow:none;
   text-indent:-5000px;
-}
 
-.main-nav__wrapper {
-  @include container;
+  @media (#{$tablet-width}){
+    display:none;
+  }
 }
 
 .main-nav__items {
   margin:0;
   padding:0;
   font-family: $opensansbold;
+
+  @media (#{$tablet-width}){
+    height:40px;
+    display:flex;
+    flex-direction:row;
+    justify-content:space-between;
+    align-items:flex-end;
+  }
+
+  @media (#{$desktop-width}){
+    height:89px;
+    flex-wrap:wrap;
+    justify-content: flex-start;
+    align-items:stretch;
+  }
 }
 .main-nav__item {
   margin:0;
   padding-left:76px;
   height:79px;
+
   line-height:79px;
   list-style:none;
   font-size:17px;
@@ -33,40 +60,39 @@
   display:block;
   border-top:1px solid #ececec;
 
-  &--desktop-only {
-    display:none;
+  @media (#{$tablet-width}){
+    border:none;
+    padding-left:0;
+    height:24px;
+
+    line-height:24px;
+    font-size:15px;
+    align-self:flex-end;
+  }
+
+  @media (#{$desktop-width}){
+    border:none;
+    padding-left:0;
+    height:89px;
+    width:175px;
+
+    line-height:89px;
+    font-size:15px;
+    align-self:stretch;
   }
 }
 
 .main-nav__items a {@include link;}
 
-.main-nav__custom-items {
-  margin:0;
-  padding:0;
-  font-family: $opensansbold;
-}
+.main-nav__item--desktop-only{
+  display:none;
 
-.main-nav__custom-items a {@include link;}
-
-.main-nav__custom-item {
-  display:block;
-  margin:0;
-  padding-left:76px;
-  height:79px;
-  line-height:79px;
-  list-style:none;
-
-  font-size:17px;
-  font-weight:bold;
-  border-top:1px solid #ececec;
-
-  &--search {
-    background:url(/img/icon-search.svg) no-repeat 5% 50%;
-  }
-  &--cart {
-    background:url(/img/icon-cart.svg) no-repeat 5% 50%;
-  }
-  &--shipping {
-    display:none; /*откроется на планшетной и десктоп-версии*/
+  @media (#{$desktop-width}){
+    display:block;
+    line-height:24px;
+    height:24px;
+    font-size:15px;
+    font-family:$opensans;
+    text-align:left;
   }
 }

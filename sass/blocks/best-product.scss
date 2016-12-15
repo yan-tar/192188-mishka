@@ -9,10 +9,41 @@
   box-sizing:border-box;
   padding-left:$mob-pad-side;
   padding-right:$mob-pad-side;
+  display:flex;
+  flex-direction:column;
+
+  @media (#{$tablet-width}){
+    padding-left:0;
+    padding-right:0;
+    display:block;
+    margin-bottom:51px;
+  }
+
+  @media (#{$desktop-width}){
+    @include clearfix;
+    position:relative;
+    padding-top:50px;
+  }
+}
+
+.best-product__header{
+  @media (#{$tablet-width}){
+    display:flex;
+    justify-content: space-between;
+    align-items: flex-end;
+  }
+  @media (#{$desktop-width}){
+    flex-direction:row-reverse;
+  }
 }
 
 .best-product__title{
   @include h2-title;
+
+  @media (#{$desktop-width}){
+    font-size:53px;
+    margin-right:auto;
+  }
 }
 
 .best-product__note{
@@ -23,6 +54,17 @@
   font-weight: bold;
   line-height: 16px;
   text-transform: uppercase;
+
+  @media (#{$tablet-width}){
+    height:30px;
+    margin:20px 0 10px;
+    width:106px;
+    text-align:center;
+  }
+  @media (#{$desktop-width}){
+    width: 106px;
+    margin-right:69px;
+  }
 }
 
 .best-product__desc{
@@ -30,6 +72,13 @@
   font-family: $opensans;
   font-size: 15px;
   line-height: 24px;
+}
+
+.best-product__meta{
+  @media (#{$tablet-width}){
+    margin-right:0;
+    width:290px;
+  }
 }
 
 .best-product__meta-str {
@@ -48,11 +97,51 @@
   display:inline;
 }
 
+.best-product__text{
+  @media (#{$tablet-width}){
+    width:50%;
+  }
+  @media (#{$desktop-width}){
+    margin-left:175px;
+    width:30%;
+  }
+}
+
 .best-product__pic{
   box-sizing:content-box;
   text-align:center;
   margin: 28px 0;
   background-color:#f1f1f1;
+
+  order:1;
+
+  @media (#{$tablet-width}){
+    float:right;
+    margin-bottom:0;
+  }
+  @media (#{$desktop-width}){
+    margin-top:-100px;
+    width:525px;
+    height:636px;
+    // position:absolute;
+    // top:0;
+    // right:0;
+    // z-index:0;
+  }
+}
+
+.best-product__buy {
+  order:2;
+
+  @media (#{$tablet-width}){
+    width:50%;
+  }
+  @media (#{$desktop-width}){
+    margin-left:175px;
+    width:30%;
+    position:relative;
+    bottom:0;
+  }
 }
 
 .best-product__price {
@@ -61,4 +150,15 @@
   font-size: 17px;
   font-weight: bold;
   line-height: 24px;
+
+  @media (#{$desktop-width}){
+    text-align:center;
+  }
+}
+
+.best-product__to-order{
+  @media (#{$tablet-width}){
+    margin-right:0;
+    width:290px;
+  }
 }

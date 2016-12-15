@@ -1,0 +1,74 @@
+.custom-nav {
+  @media (#{$tablet-width}){
+    flex-basis:334px;
+    height:89px;
+    order:1;
+    margin-left:auto;
+  }
+
+  @media (#{$desktop-width}){
+    order:2;
+    margin-left:0;
+  }
+}
+
+.custom-nav__items {
+  margin:0;
+  padding:0;
+  font-family: $opensansbold;
+
+  @media (#{$tablet-width}){
+    height:89px;
+    display:flex;
+    align-items:stretch;
+  }
+}
+
+.custom-nav__items a {@include link;}
+
+.custom-nav__item {
+  display:block;
+  margin:0;
+  padding-left:76px;
+  height:79px;
+  line-height:79px;
+  list-style:none;
+
+  font-size:17px;
+  font-weight:bold;
+  border-top:1px solid #ececec;
+  @media (#{$tablet-width}){
+    height:89px;
+  }
+
+  &--search {
+    background:url(/img/icon-search.svg)
+    no-repeat 5% 50%;
+
+    @media (#{$tablet-width}){
+      width:88px;
+      overflow:none;
+      border-left:1px solid $border-color;
+      border-right:1px solid $border-color;
+      box-sizing:border-box;
+      background:url(/img/icon-search.svg)
+      no-repeat 50% 50%;
+
+    }
+  }
+  &--cart {
+    background:url(/img/icon-cart.svg) no-repeat 5% 50%;
+
+    @media (#{$tablet-width}){
+      height:89px;
+      font-size:15px;
+      background:url(/img/icon-cart.svg) no-repeat 31px 50%;
+    }
+  }
+}
+
+.custom-nav__item--search a {
+  @media (#{$tablet-width}){
+    color:#fff; /*пока не понимаю, как скрыть текст*/
+  }
+}

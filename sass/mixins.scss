@@ -36,11 +36,11 @@
   width:320px;
   margin:0 auto;
 
-  @media (min-width:$tablet-width){
-    width:640px;
+  @media (#{$tablet-width}){
+    width:668px;
   }
 
-  @media (min-width:$desktop-width){
-    width:940px;
+  @media (#{$desktop-width}){
+    width:1050px;
   }
 }
