@@ -8,18 +8,25 @@
   </head>
 <body class="mishka-body">
   <header class="page-header">
-    <div class="page-header__logo"><img src="img/logo-mobile.svg" width="86" height="35" alt="Логотип"></div>
-    <nav class="main-nav  main-nav--closed  main-nav--nojs">
-      <button class="main-nav__toggle" type="button">Открыть меню</button>
-      <div class="main-nav__wrapper">
+    <div class="page-header__wrapper">
+      <div class="page-header__logo"><img src="img/logo-mobile.svg" width="86" height="35" alt="Магазин Мишка"></div>
+      <nav class="main-nav  main-nav--closed  main-nav--nojs">
+        <button class="main-nav__toggle" type="button">Открыть меню</button>
         <ul class="main-nav__items">
           <li class="main-nav__item"><a href="catalog.html">Каталог товаров</a></li>
           <li class="main-nav__item"><a href="form.html">Вязание на заказ</a></li>
-          <li class="main-nav__item  main-nav__item--search"><a href="page.html">Поиск по сайту</a></li>
-          <li class="main-nav__item  main-nav__item--cart  main-nav__item--cart-empty"><a href="page.html">Корзина: пока пуста</a></li>
+          <li class="main-nav__item  main-nav__item--desktop-only"><a href="page.html">Новые поступления</a></li>
+          <li class="main-nav__item  main-nav__item--desktop-only"><a href="page.html">Распродажа</a></li>
         </ul>
-      </div>
-    </nav>
+      </nav>
+      <nav class="custom-nav  custom-nav--closed  custom-nav--nojs">
+        <ul class="custom-nav__items">
+          <li class="custom-nav__item  custom-nav__item--search"><a href="page.html">Поиск по сайту</a></li>
+          <li class="custom-nav__item  custom-nav__item--cart  custom-nav__item--cart-empty"><a href="page.html">Корзина: пока пуста</a></li>
+        </ul>
+      </nav>
+      <div class="page-header__shipping">Бесплатная доставка по России</div>
+    </div>
   </header>
   <main class="page-content">
     <h1 class="page-content__title">Вязание на заказ</h1>

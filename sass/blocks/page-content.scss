@@ -6,4 +6,8 @@
   text-align:center;
   margin:0;
   padding:0;
+  @media (#{$tablet-width}){
+    line-height: 220px;
+    font-size: 43px;
+  }
 }
