@@ -1,9 +1,17 @@
 @font-face {
-  font-family: OpenSans; /* Имя шрифта */
-  src: url(/fonts/opensans.woff); /* Путь к файлу со шрифтом */
+  font-weight: normal;
+  font-family: OpenSans;
+  font-style: normal;
+
+  src: url(/fonts/opensans.woff2) format("woff2");
+  src: url(/fonts/opensans.woff) format("woff");
 }
 
 @font-face {
-  font-family: OpenSansBold; /* Имя шрифта */
-  src: url(/fonts/opensansbold.woff); /* Путь к файлу со шрифтом */
+  font-weight: 700;
+  font-family: OpenSansBold;
+  font-style: normal;
+
+  src: url(/fonts/opensansbold.woff2)  format("woff2");
+  src: url(/fonts/opensansbold.woff)  format("woff");
 }

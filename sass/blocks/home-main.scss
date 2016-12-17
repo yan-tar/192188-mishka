@@ -1,10 +1,19 @@
 .home-main {
-  width:320px;
+  background-color: #fbfbfb;
+  margin-bottom:33px;
+}
+.home-main__wrapper {
+  @include container;
+  position:relative;
+
+  @media (#{$tablet-width}){
+    height:745px;
+  }
 }
 .home-main h1 {
   font-family:$opensansbold;
   margin:0;
-  padding:74px 30px;
+  padding:74px 30px 0;
   height:283px;
   background-color: #fbfbfb;
   box-sizing:border-box;
@@ -13,9 +22,29 @@
   text-align:center;
   background:url(/img/hero-mobile@1x.jpg)
     no-repeat 50% 0;
+
+  @media (#{$tablet-width}){
+    height:626px;
+    padding-top:162px;
+    background-position: 50% 80px;
+    background-size:cover;
+
+    font-size:43px;
+    line-height:50px;
+  }
 }
 
-.home-main__menu-list {margin:0;padding:0;}
+.home-main__menu-list {
+  margin:0;
+  padding:0;
+  position:relative;
+
+  @media (#{$tablet-width}){
+    height:119px;
+    display:flex;
+    align-content:stretch;
+  }
+}
 
 .home-main__menu-list a {
   @include link;
@@ -27,12 +56,18 @@
   &:active {
     @include fademe($big-link-color, 0.3);
   }
+
+  @media (#{$tablet-width}){
+    height:119px;
+    display:block;
+    flex-grow:1;
+    align-items:stretch;
+  }
 }
 
 .home-main__menu-item {
-  box-sizing:border-box;
   list-style-type: none;
-  height:103px;
+  height:57px;
   padding:23px 160px 23px;
   padding-left:$mob-pad-side;
   font-family:$opensansbold;
@@ -49,7 +84,13 @@
     no-repeat 90% 50%;
   }
   &:hover {
-    height:108px;
+    height:67px;
   }
 
+  @media (#{$tablet-width}){
+    height:73px;
+    &:hover {
+      height:83px;
+    }
+  }
 }

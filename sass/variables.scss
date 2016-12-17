@@ -9,10 +9,18 @@ $hover-color: rgba($link-color,0.6);
 $down-color: rgba($link-color,0.3);
 $border-color:#ececec;
 
+/*сетка*/
+$mob-pad-side: 30px;
+
+$tablet-width: "min-width: 768px";
+$tab-pad-side: 50px;
+
+$desktop-width: "min-width: 1150px";
+$desk-pad-side: 50px;
 
 /*шрифты*/
 $opensans: OpenSans, Arial, sans-serif;
 $opensansbold: OpenSansBold, Arial, sans-serif;
 
-$mob-pad-side: 30px;
+
 $wavy:1px solid #f5f5f5;/*потом заменить на волнистую линию*/

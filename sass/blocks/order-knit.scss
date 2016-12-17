@@ -2,6 +2,10 @@
   margin-bottom:55px;
   color:$main-color;
 }
+.order-knit__wrapper{
+  @include container;
+}
+
 .order-knit__simple-text {
   width:260px;
   margin:30px 0 30px $mob-pad-side;

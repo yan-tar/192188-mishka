@@ -1,29 +1,81 @@
 .contacts {
   border-top: $wavy;
   padding-bottom:10px;
+  @media (#{$tablet-width}){
+    padding-bottom:30px;
+    padding-top:40px;
+  }
+  @media (#{$desktop-width}){
+    flex-wrap:wrap;
+    display:flex;
+  }
 }
+
+.contacts__wrapper {
+  @include container;
+  box-sizing:border-box;
+  padding-left:$mob-pad-side;
+  padding-right:$mob-pad-side;
+  @media (#{$tablet-width}){
+    padding-left:0;
+    padding-right:0;
+  }
+  @media (#{$desktop-width}){
+    width:520px;
+  }
+}
+
+.contacts__wrapper:last-child {
+  @media (#{$desktop-width}){
+    width:1050px;
+  }
+}
+
 .contacts__title{
   @include h2-title;
-  font-size:18px;
   margin-top: 35px;
-  padding-left:$mob-pad-side;
+  font-size:18px;
+  @media (#{$tablet-width}){
+    height:81px;
+    font-size:43px;
+    line-height:81px;
+    background:url(/img/icon-flag.svg) no-repeat right 0;
+    background-size:47px 81px;
+  }
+  @media (#{$desktop-width}){
+    padding-left:175px;
+    background-position:left top;
+  }
 }
 
 .contacts__info{
   margin-top:30px;
-  padding-left:$mob-pad-side;
-  padding-right:$mob-pad-side;
+
   font-size:15px;
   line-height:30px;
   color:$main-color;
+  @media (#{$tablet-width}){
+    display:flex;
+  }
+  @media (#{$desktop-width}){
+    padding-left:175px;
+    flex-direction:column;
+  }
 }
 
-.contacts__str {margin-bottom:30px;}
+.contacts__str {
+  display:flex;
+  margin-bottom:30px;
+  @media (#{$tablet-width}){
+    width:48%;
+    padding-right:2%;
+  }
+}
 
 .contacts__str dt {
   display:inline-block;
   vertical-align:top;
-  width:18%;
+  min-width:50px;
 }
 .contacts__str dd {
   display:inline-block;
@@ -49,8 +101,22 @@
   height:450px;
   background-color: #f3f1ea;
   background:url(/img/map-mobile@1x.jpg) no-repeat 0 0;
+  background-size:100%;
+  border:1px solid $border-color; /*временно, для сетки*/
+  @media (#{$tablet-width}){
+    margin-bottom:55px;
+  }
+  @media (#{$desktop-width}){
+    width:525px;
+    background:none;
+  }
+
 }
 
 .contacts__write-us{
-  margin-left:$mob-pad-side;
+  @media (#{$tablet-width}){
+    width:260px;
+    margin-left:auto;
+    margin-right:auto;
+  }
 }
