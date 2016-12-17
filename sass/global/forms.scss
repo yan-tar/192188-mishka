@@ -1,4 +1,4 @@
-fieldset {
+.mishka-form__fieldset {
   border:none;
   border-top:1px solid $accent-color;
   padding-left:0;
@@ -7,7 +7,7 @@ fieldset {
   margin-left:$mob-pad-side;
 }
 
-legend {
+.mishka-form__legend {
   color:$accent-color;
   font-family: $opensansbold;
   font-size: 17px;
@@ -17,7 +17,7 @@ legend {
   padding-right:25px;
 }
 
-label {
+.mishka-form__label-text {
   display:block;
   color: $title-color;
   font-family: $opensansbold;
@@ -27,53 +27,67 @@ label {
   margin:20px 0;
   }
 
-input[type="radio"],
-input[type="checkbox"] {
+.mishka-form__radio,
+.mishka-form__checkbox {
   display:none;
 }
 
-input[type="radio"] ~label:before,
-input[type="checkbox"] ~label:before{
+.mishka-form__label-radio,
+.mishka-form__label-check {
+  display:block;
+  color: $title-color;
+  font-family: $opensansbold;
+  font-size: 17px;
+  font-weight: bold;
+  line-height: 18px;
+  margin:20px 0;
+  padding-left: 60px;
+
+  &:before {
     content: "";
     display: inline-block;
     width: 40px;
     height: 39px;
     margin-right: 20px;
+    margin-left: -58px;
     vertical-align: middle;
     border: 2px solid #4d4d4d;
+  }
 }
 
-input[type="radio"] ~ label:before {
+.mishka-form__radio + label:before {
   box-sizing:border-box;
   padding:3px;
   border-radius: 50%;
 }
 
-input[type="radio"] ~ label:before {
-    background: $accent-color;
-    box-shadow: 0 0 0 0 $accent-color;
+.mishka-form__radio:checked + label:before {
+    background-color: $accent-color;
+    box-shadow: inset 0 0px 0px 7px #fff;
+    border-color: $accent-color;
+}
+
+.mishka-form__checkbox:checked + label:before {
+    background: url(/img/icon-tick.svg) no-repeat 5px 5px;
 }
 
 
-input[type="text"],
-input[type="tel"],
-input[type="email"]{
+.mishka-form__input-text {
   border:none;
   border-bottom:1px solid #000;
   width:260px;
   font-size:17px;
   line-height:54px;
+
+  &[type="email"]{
+    background:url(/img/icon-mail.svg) no-repeat 225px 50%;
+  }
+  &[type="tel"]{
+    background:url(/img/icon-phone.svg) no-repeat 230px 50%;
+  }
 }
 
-input[type="email"]{
-  background:url(/img/icon-mail.svg) no-repeat 225px 50%;
-}
-
-input[type="tel"]{
-  background:url(/img/icon-phone.svg) no-repeat 230px 50%;
-}
-
-textarea {
+.mishka-form__textarea {
   width:260px;
   height: 142px;
   border: 2px solid $main-color;
@@ -84,6 +98,6 @@ textarea {
   box-sizing:border-box;
 }
 
-textarea[placeholder] {
+.mishka-form__textarea[placeholder] {
   @include fademe($main-color, 0.3);
 }

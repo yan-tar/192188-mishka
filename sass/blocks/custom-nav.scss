@@ -69,6 +69,6 @@
 
 .custom-nav__item--search a {
   @media (#{$tablet-width}){
-    color:#fff; /*пока не понимаю, как скрыть текст*/
+    font-size:0px; /*пока не понимаю, как скрыть текст*/
   }
 }
