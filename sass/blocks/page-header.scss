@@ -9,6 +9,10 @@
   @include container;
 
   @media (#{$tablet-width}){
+    box-sizing:border-box;
+    padding-left:$tab-pad-side;
+    padding-right:$tab-pad-side;
+
     display:flex;
     flex-wrap:wrap;
     flex-direction:row;

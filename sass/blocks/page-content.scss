@@ -1,13 +1,15 @@
 .page-content__title {
+  margin:0;
+  padding:0 0 5px;
   background-color: #f1f1f1;
   font-size: 27px;
   line-height:170px;
   color: $title-color;
   text-align:center;
-  margin:0;
-  padding:0 0 5px;
+
   @media (#{$tablet-width}){
-    line-height: 220px;
-    font-size: 43px;
+    padding: 5px 0 0;
+    line-height: 221px;
+    font-size: 42px;
   }
 }

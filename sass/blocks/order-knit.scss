@@ -7,8 +7,13 @@
   font-family: $opensans;
   font-size: 13px;
   line-height: 24px;
-}
 
+  @media (#{$tablet-width}){
+    margin:70px $tab-pad-side 32px $tab-pad-side;
+    font-size: 16px;
+    line-height: 30px;
+  }
+}
 
 .order-knit__prim{
   width:260px;
@@ -16,5 +21,16 @@
   margin-top:10px;
   font-size: 14px;
   line-height: 16px;
+
+  @media (#{$tablet-width}){
+    width:auto;
+    float:right;
+    margin-top:15px;
+    margin-right:$tab-pad-side;
+    text-align:right;
+
+    font-size:17px;
+    line-height: 20px;
+  }
 }
 

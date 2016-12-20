@@ -55,7 +55,7 @@
             </div>
           </div>
           <div class="mishka-form__fieldset  mishka-form__fieldset--color">
-            <h3 class="mishka-form__legend">цвет</h3>
+            <h3 class="mishka-form__legend  mishka-form__legend--color">цвет</h3>
             <div class="mishka-form__input-wrapper  mishka-form__input-wrapper--color">
               <input
                 class="mishka-form__checkbox"
@@ -104,14 +104,20 @@
             </div>
           </div>
           <div class="mishka-form__fieldset  mishka-form__fieldset--name">
-            <h3 class="mishka-form__legend">ФИО</h3>
-            <div class="order-knit__input-wrapper">
-              <label class="mishka-form__label-text  mishka-form__label-text--personal mishka-form__label-text--required" for="yourname">Имя:</label>
-              <input class="mishka-form__input-text" type="text" id="yourname" placeholder="Введите ваше имя *" required>
-              <label class="mishka-form__label-text  mishka-form__label-text--personal mishka-form__label-text--required" for="surname">Фамилия:</label>
-              <input class="mishka-form__input-text" type="text" id="surname" placeholder="Укажите фамилию *" required>
-              <label class="mishka-form__label-text  mishka-form__label-text--personal" for="middlename">Отчество:</label>
-              <input class="mishka-form__input-text" type="text" id="middlename" placeholder="Отчество, если желаете">
+            <h3 class="mishka-form__legend  mishka-form__legend--name">ФИО</h3>
+            <div class="mishka-form__input-wrapper">
+              <div class="mishka-form__label-text-wrapper">
+                <label class="mishka-form__label-text  mishka-form__label-text--personal mishka-form__label-text--required" for="yourname">Имя:</label>
+                <input class="mishka-form__input-text" type="text" id="yourname" placeholder="Введите ваше имя *" required>
+              </div>
+              <div class="mishka-form__label-text-wrapper">
+                <label class="mishka-form__label-text  mishka-form__label-text--personal mishka-form__label-text--required" for="surname">Фамилия:</label>
+                <input class="mishka-form__input-text" type="text" id="surname" placeholder="Укажите фамилию *" required>
+              </div>
+              <div class="mishka-form__label-text-wrapper">
+                <label class="mishka-form__label-text  mishka-form__label-text--personal" for="middlename">Отчество:</label>
+                <input class="mishka-form__input-text" type="text" id="middlename" placeholder="Отчество, если желаете">
+              </div>
             </div>
           </div>
           <div class="mishka-form__fieldset  mishka-form__fieldset--tel">
@@ -133,12 +139,17 @@
     </section>
   </main>
   <footer class="page-footer">
-    <ul class="page-footer__social">
-      <li><a class="social__link  social__link--inst" href="#"></a></li>
-      <li><a class="social__link  social__link--fb" href="#"></a></li>
-      <li><a class="social__link  social__link--tw" href="#"></a></li>
-    </ul>
-    <div class="page-footer__copyright">Разработано <a href="#" target="_blank"><img class="page-footer__academy-logo" src="img/htmlacademy.svg" width="27" height="34" alt="HTML Academy"></a></div>
+    <div class="page-footer__wrapper">
+      <div class="page-footer__logo">
+        <img src="img/logo-mobile.svg" width="86" height="35" alt="Магазин Мишка">
+      </div>
+      <ul class="page-footer__social">
+        <li><a class="social__link  social__link--inst" href="#"></a></li>
+        <li><a class="social__link  social__link--fb" href="#"></a></li>
+        <li><a class="social__link  social__link--tw" href="#"></a></li>
+      </ul>
+      <div class="page-footer__copyright">Разработано <a href="#" target="_blank"><img class="page-footer__academy-logo" src="img/htmlacademy.svg" width="27" height="34" alt="HTML Academy"></a></div>
+    </div>
   </footer>
 </body>
 </html>

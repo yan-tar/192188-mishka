@@ -9,6 +9,9 @@
 .page-footer__wrapper{
   @include container;
   @media (#{$tablet-width}){
+    box-sizing:border-box;
+    padding-left:$tab-pad-side;
+    padding-right:$tab-pad-side;
     height: 84px;
     display:flex;
     justify-content: space-between;
