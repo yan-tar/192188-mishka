@@ -33,52 +33,101 @@
     <section class="order-knit">
       <div class="order-knit__wrapper">
         <p class="order-knit__simple-text">Мы будем рады воплотить в&nbsp;жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с&nbsp;вами, чтобы уточнить детали.</p>
-        <form class="mishka-form order-knit__form" action="echo.htmlacademy.ru" и method="">
-          <fieldset class="mishka-form__fieldset  order-knit__form-group  order-knit__form-group--type">
-            <legend class="mishka-form__legend  order-knit__legend">тип</legend>
-            <input type="radio" value="1" id="product-type-interier" name="order-knit__product-type" class="mishka-form__radio" checked>
-            <label class="mishka-form__label-radio  order-knit__product-type order-knit__product-type--checked"  for="product-type-interier">Аксессуар для&nbsp;интерьера</label>
-            <input type="radio" value="2" id="product-type-toy" name="order-knit__product-type" class="mishka-form__radio">
-            <label class="mishka-form__label-radio  order-knit__product-type" for="product-type-toy">Детская игрушка</label>
-          </fieldset>
-          <fieldset class="mishka-form__fieldset  order-knit__form-group order-knit__form-group--color">
-            <legend class="mishka-form__legend  order-knit__legend">цвет</legend>
-            <input class="mishka-form__checkbox" type="checkbox" value="white" id="white"  name="order-knit__product-color" checked>
-            <label class="mishka-form__label-check  order-knit__product-color order-knit__field-color--checked" for="white">Белый</label>
-            <input class="mishka-form__checkbox" type="checkbox" value="gray" id="gray"  name="order-knit__product-color" checked>
-            <label class="mishka-form__label-check  order-knit__product-color order-knit__field-color--checked" for="gray">Серый</label>
-            <input class="mishka-form__checkbox" type="checkbox" value="tiffany" id="tiffany" name="order-knit__product-color">
-            <label class="mishka-form__label-check  order-knit__product-color" for="tiffany">&laquo;Тиффани&raquo;</label>
-            <input class="mishka-form__checkbox" type="checkbox" value="black" id="black" name="order-knit__product-color">
-            <label class="mishka-form__label-check  order-knit__product-color" for="black">Черный</label>
-            <input class="mishka-form__checkbox" type="checkbox" value="pink" id="pink" name="order-knit__product-color">
-            <label class="mishka-form__label-check  order-knit__product-color" for="pink">Розовый</label>
-            <input class="mishka-form__checkbox" type="checkbox" value="orange" id="orange" name="order-knit__product-color">
-            <label class="mishka-form__label-check  order-knit__product-color" for="orange">Оранжевый</label>
-          </fieldset>
-          <fieldset class="mishka-form__fieldset  order-knit__form-group order-knit__form-group--name">
-            <legend class="mishka-form__legend  order-knit__legend">ФИО</legend>
-            <label class="mishka-form__label-text  order-knit__personal-label order-knit__personal-label--required" for="yourname">Имя:</label>
-            <input class="mishka-form__input-text  order-knit__personal-text" type="text" id="yourname" placeholder="Введите ваше имя *" required>
-            <label class="mishka-form__label-text  order-knit__personal-label order-knit__personal-label--required" for="surname">Фамилия:</label>
-            <input class="mishka-form__input-text  order-knit__personal-text" type="text" id="surname" placeholder="Укажите фамилию *" required>
-            <label class="mishka-form__label-text  order-knit__personal-label" for="middlename">Отчество:</label>
-            <input class="mishka-form__input-text  order-knit__personal-text" type="text" id="middlename" placeholder="Отчество, если желаете">
-          </fieldset>
-          <fieldset class="mishka-form__fieldset  order-knit__form-group order-knit__form-group--tel">
-            <legend class="mishka-form__legend  order-knit__legend">тел</legend>
-            <input class="mishka-form__input-text   order-knit__tel order-knit__text" type="tel" id="phone" placeholder="+7 XXX XX XX*" required>
-          </fieldset>
-          <fieldset class="mishka-form__fieldset  order-knit__form-group order-knit__form-group--email">
-            <legend class="mishka-form__legend  order-knit__legend">e-mail</legend>
-            <input class="mishka-form__input-text  order-knit__email order-knit__text" type="email" id="email" placeholder="Ваш Email*" required>
-          </fieldset>
-          <fieldset class="mishka-form__fieldset  order-knit__form-group order-knit__form-group--dop">
-            <legend class="mishka-form__legend  order-knit__legend">доп</legend>
-            <textarea class="mishka-form__textarea  order-knit__textarea" placeholder="Опишите все ваши пожелания к заказу" id="dop"></textarea>
-          </fieldset>
+        <form class="mishka-form" action="echo.htmlacademy.ru" и method="">
+          <div class="mishka-form__fieldset  mishka-form__fieldset--type">
+            <h3 class="mishka-form__legend">тип</h3>
+            <div class="mishka-form__input-wrapper">
+              <input
+                class="mishka-form__radio"
+                id="product-type-interier"
+                name="product-type"
+                type="radio"
+                value="1"
+                checked>
+              <label class="mishka-form__label-radio  mishka-form__label-radio--checked" for="product-type-interier">Аксессуар для интерьера</label>
+              <input
+                class="mishka-form__radio"
+                id="product-type-toy"
+                name="product-type"
+                type="radio"
+                value="2">
+              <label class="mishka-form__label-radio" for="product-type-toy">Детская игрушка</label>
+            </div>
+          </div>
+          <div class="mishka-form__fieldset  mishka-form__fieldset--color">
+            <h3 class="mishka-form__legend">цвет</h3>
+            <div class="mishka-form__input-wrapper  mishka-form__input-wrapper--color">
+              <input
+                class="mishka-form__checkbox"
+                type="checkbox"
+                value="white"
+                id="white"
+                name="product-color"
+                checked>
+              <label class="mishka-form__label-check  mishka-form__label-check--checked" for="white">Белый</label>
+              <input
+                class="mishka-form__checkbox"
+                id="gray"
+                type="checkbox"
+                value="gray"
+                name="product-color"
+                checked>
+              <label class="mishka-form__label-check  mishka-form__label-color--checked" for="gray">Серый</label>
+              <input
+                class="mishka-form__checkbox"
+                type="checkbox"
+                value="tiffany"
+                id="tiffany"
+                name="product-color">
+              <label class="mishka-form__label-check" for="tiffany">&laquo;Тиффани&raquo;</label>
+              <input
+                class="mishka-form__checkbox"
+                type="checkbox"
+                value="black"
+                id="black"
+                name="product-color">
+              <label class="mishka-form__label-check" for="black">Черный</label>
+              <input
+                class="mishka-form__checkbox"
+                type="checkbox"
+                value="pink"
+                id="pink"
+                name="product-color">
+              <label class="mishka-form__label-check" for="pink">Розовый</label>
+              <input
+                class="mishka-form__checkbox"
+                type="checkbox"
+                value="orange"
+                id="orange"
+                name="product-color">
+              <label class="mishka-form__label-check" for="orange">Оранжевый</label>
+            </div>
+          </div>
+          <div class="mishka-form__fieldset  mishka-form__fieldset--name">
+            <h3 class="mishka-form__legend">ФИО</h3>
+            <div class="order-knit__input-wrapper">
+              <label class="mishka-form__label-text  mishka-form__label-text--personal mishka-form__label-text--required" for="yourname">Имя:</label>
+              <input class="mishka-form__input-text" type="text" id="yourname" placeholder="Введите ваше имя *" required>
+              <label class="mishka-form__label-text  mishka-form__label-text--personal mishka-form__label-text--required" for="surname">Фамилия:</label>
+              <input class="mishka-form__input-text" type="text" id="surname" placeholder="Укажите фамилию *" required>
+              <label class="mishka-form__label-text  mishka-form__label-text--personal" for="middlename">Отчество:</label>
+              <input class="mishka-form__input-text" type="text" id="middlename" placeholder="Отчество, если желаете">
+            </div>
+          </div>
+          <div class="mishka-form__fieldset  mishka-form__fieldset--tel">
+            <label class="mishka-form__legend  mishka-form__legend--tel" for="phone">тел</label>
+            <input class="mishka-form__input-text   mishka-form__input-text--tel" type="tel" id="phone" placeholder="+7 XXX XX XX*" required>
+          </div>
+          <div class="mishka-form__fieldset  mishka-form__fieldset--email">
+            <label class="mishka-form__legend  mishka-form__legend--email" for="email">e-mail</label>
+            <input class="mishka-form__input-text  mishka-form__input-text--email" type="email" id="email" placeholder="Ваш Email*" required>
+          </div>
+          <div class="mishka-form__fieldset  mishka-form__fieldset--dop">
+            <label class="mishka-form__legend  mishka-form__legend--dop" for="dop">доп</label>
+            <textarea class="mishka-form__textarea" placeholder="Опишите все ваши пожелания к заказу" id="dop"></textarea>
+          </div>
           <div class="order-knit__prim">*Поля обязательны для заполнения</div>
-          <button class="button order-knit__btn" type="submit">отправить заказ</button>
+          <button class="button mishka-form__btn" type="submit">отправить заказ</button>
         </form>
       </div>
     </section>

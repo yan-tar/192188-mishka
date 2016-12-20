@@ -1,20 +1,82 @@
+.mishka-form {
+  margin-bottom:55px;
+  color:$main-color;
+}
+
 .mishka-form__fieldset {
   border:none;
-  border-top:1px solid $accent-color;
   padding-left:0;
-  width:260px;
-  margin-top:25px;
+  margin-top:34px;
   margin-left:$mob-pad-side;
+
+
+  &--color{
+    @media (#{$tablet-width}){
+      background-color:#f1f1f1;
+    }
+  }
+
+  &--tel {
+    margin-top:36px;
+  }
+
+  &--email,
+  &--dop {
+    margin-top:42px;
+  }
+
+  &--tel,
+  &--email {
+    @media (#{$tablet-width}){
+      background-color:#f1f1f1;
+    }
+  }
+
+  @media (#{$tablet-width}){
+    display: flex;
+    flex-wrap: wrap;
+    border: none;
+    margin-left:0;
+  }
 }
 
 .mishka-form__legend {
+  position:relative;
+  display:block;
+  margin-top:-9px;
+  margin-bottom:25px;
+  padding-right:25px;
+
   color:$accent-color;
   font-family: $opensansbold;
   font-size: 17px;
   font-weight: bold;
   line-height: 16px;
   text-transform: uppercase;
-  padding-right:25px;
+
+  &--tel,
+  &--email {
+    margin-bottom:1px;
+  }
+
+  &--dop {
+    margin-bottom: 0px;
+  }
+
+  &::after{
+    content: "";
+    position: absolute;
+    height: 1px;
+    width: 68%;
+    top: 50%;
+    left: 62px;
+    background-color: $accent-color;
+  }
+
+  @media (#{$tablet-width}){
+    width: 167px;
+    position:relative;
+  }
 }
 
 .mishka-form__label-text {
@@ -23,8 +85,12 @@
   font-family: $opensansbold;
   font-size: 17px;
   font-weight: bold;
-  line-height: 18px;
+  line-height: 17px;
   margin:20px 0;
+
+    &--personal {
+      margin:20px 0 0;
+    }
   }
 
 .mishka-form__radio,
@@ -35,19 +101,22 @@
 .mishka-form__label-radio,
 .mishka-form__label-check {
   display:block;
+  height:42px;
+
+  margin:20px 0;
+  padding-left: 60px;
+
   color: $title-color;
   font-family: $opensansbold;
   font-size: 17px;
   font-weight: bold;
   line-height: 18px;
-  margin:20px 0;
-  padding-left: 60px;
 
   &:before {
     content: "";
     display: inline-block;
-    width: 40px;
-    height: 39px;
+    width: 36px;
+    height: 35px;
     margin-right: 20px;
     margin-left: -58px;
     vertical-align: middle;
@@ -59,6 +128,8 @@
   box-sizing:border-box;
   padding:3px;
   border-radius: 50%;
+  width: 40px;
+  height: 40px;
 }
 
 .mishka-form__radio:checked + label:before {
@@ -68,9 +139,13 @@
 }
 
 .mishka-form__checkbox:checked + label:before {
-    background: url(/img/icon-tick.svg) no-repeat 5px 5px;
+    background: url(/img/icon-tick.svg) no-repeat 5px 9px;
+    background-size:70%;
 }
 
+.mishka-form__input-wrapper{
+  margin-left:-1px;
+}
 
 .mishka-form__input-text {
   border:none;
@@ -83,6 +158,7 @@
     background:url(/img/icon-mail.svg) no-repeat 225px 50%;
   }
   &[type="tel"]{
+    border-bottom:2px solid #000;
     background:url(/img/icon-phone.svg) no-repeat 230px 50%;
   }
 }
@@ -100,4 +176,9 @@
 
 .mishka-form__textarea[placeholder] {
   @include fademe($main-color, 0.3);
+}
+
+.mishka-form__btn{
+  margin-left:$mob-pad-side;
+  width:260px;
 }

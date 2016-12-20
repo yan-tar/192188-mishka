@@ -2,6 +2,22 @@ body {
   min-width:320px;
   font-family: $opensans;
   font-size: 15px;
+  background:
+    url(/preview/mishka-form-mobile-opacity.png)
+    no-repeat
+    50% 320px;
+  @media (#{$tablet-width}){
+   background:
+    url(/preview/mishka-form-tablet-opacity.png)
+    no-repeat
+    50% 0;
+  }
+  @media (#{$desktop-width}){
+    background:
+    url(/preview/mishka-form-desktop-opacity.png)
+    no-repeat
+    50% 0;
+  }
 }
 
 img {

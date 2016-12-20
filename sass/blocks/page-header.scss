@@ -21,7 +21,7 @@
 
 .page-header__logo {
   text-align: center;
-  height:89px; /*временно для сетки*/
+  height:79px; /*временно для сетки*/
   @media (#{$tablet-width}){
     flex-basis: 111px;
   }
