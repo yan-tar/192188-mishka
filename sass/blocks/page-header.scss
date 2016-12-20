@@ -19,6 +19,8 @@
     align-items:flex-end;
   }
   @media (#{$desktop-width}){
+    padding-left:0;
+    padding-right:0;
     justify-content:space-between;
   }
 }
@@ -31,6 +33,7 @@
   }
 
   @media (#{$desktop-width}){
+    flex-basis:320px;
     order:1;
   }
 }
@@ -58,5 +61,6 @@
   @media (#{$desktop-width}){
     order:3;
     margin-left:auto;
+    line-height:57px;
   }
 }

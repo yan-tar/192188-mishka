@@ -8,6 +8,7 @@
 
 .page-footer__wrapper{
   @include container;
+
   @media (#{$tablet-width}){
     box-sizing:border-box;
     padding-left:$tab-pad-side;
@@ -16,6 +17,11 @@
     display:flex;
     justify-content: space-between;
     align-items: center;
+  }
+
+  @media (#{$desktop-width}){
+    padding-left:0;
+    padding-right:0;
   }
 }
 
@@ -35,6 +41,10 @@
   @media (#{$tablet-width}){
     margin:0;
   }
+  @media (#{$desktop-width}){
+  width: 180px;
+    margin-left: 85px;
+  }
 }
 
 .page-footer__social li {
@@ -43,6 +53,10 @@
   vertical-align:middle;
   margin:0;
   padding:0;
+
+  @media (#{$desktop-width}){
+    padding: 0 0 0 5px;
+  }
 }
 
 .social__link {
@@ -71,6 +85,7 @@
   font-weight:bold;
   line-height:18px;
   padding-top:20px;
+
   @media (#{$tablet-width}){
     border:none;
     padding:0;
@@ -79,4 +94,7 @@
 
 .page-footer__academy-logo {
   vertical-align:middle;
+  @media (#{$desktop-width}){
+    padding-left:25px;
+  }
 }

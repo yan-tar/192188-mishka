@@ -7,6 +7,7 @@
   }
 
   @media (#{$desktop-width}){
+    flex-basis:351px;
     order:2;
     margin-left:0;
   }
@@ -53,7 +54,9 @@
       box-sizing:border-box;
       background:url(/img/icon-search.svg)
       no-repeat 50% 50%;
-
+    }
+    @media (#{$desktop-width}){
+      width:86px;
     }
   }
   &--cart {
@@ -63,6 +66,11 @@
       height:89px;
       font-size:15px;
       background:url(/img/icon-cart.svg) no-repeat 31px 50%;
+    }
+    @media (#{$desktop-width}){
+      line-height:83px;
+      font-size:16px;
+          padding-left: 81px;
     }
   }
 }

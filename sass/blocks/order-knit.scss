@@ -1,3 +1,9 @@
+.order-knit{
+  @media (#{$desktop-width}){
+    margin-top: 125px;
+  }
+}
+
 .order-knit__wrapper{
   @include container;
 }
@@ -12,6 +18,11 @@
     margin:70px $tab-pad-side 32px $tab-pad-side;
     font-size: 16px;
     line-height: 30px;
+  }
+
+  @media (#{$desktop-width}){
+    margin-left: 175px;
+    margin-right: 180px;
   }
 }
 
@@ -31,6 +42,9 @@
 
     font-size:17px;
     line-height: 20px;
+  }
+  @media (#{$desktop-width}){
+    margin-right: 175px;
   }
 }
 

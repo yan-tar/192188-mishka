@@ -8,8 +8,15 @@
   text-align:center;
 
   @media (#{$tablet-width}){
+    font-family:$opensansbold;
+    font-weight: bold;
     padding: 5px 0 0;
     line-height: 221px;
     font-size: 42px;
+  }
+  @media (#{$desktop-width}){
+    padding: 5px 0 15px;
+    line-height: 229px;
+    font-size: 51px;
   }
 }
