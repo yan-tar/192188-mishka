@@ -39,12 +39,16 @@
 
 .production__play-btn {
   position:absolute;
-  top:70px;
+  top:60px;
   left: 100px;
+  height:40px;
+  width:52px;
 
   @media (#{$tablet-width}){
     top: 194px;
     left: 283px;
+    height:77px;
+    width:100px;
   }
   @media (#{$desktop-width}){
     top: 194px;
