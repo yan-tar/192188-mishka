@@ -9,8 +9,8 @@
   padding-right:$mob-pad-side;
 
   @media (#{$tablet-width}){
-    padding-left:0;
-    padding-right:0;
+    padding-left:$tab-pad-side;
+    padding-right:$tab-pad-side;
   }
 
   @media (#{$desktop-width}){
@@ -23,11 +23,15 @@
   margin-top:29px;
 
   @media (#{$tablet-width}){
-    margin-top:57px;
+    margin-top:64px;
+    font-size:43px;
+    line-height:43px;
   }
 
   @media (#{$desktop-width}){
-    margin-top:68px;
+    margin-top:60px;
+    font-size:52px;
+    line-height:52px;
   }
 }
 
@@ -45,6 +49,10 @@
     display:flex;
     flex-wrap:wrap;
     justify-content:space-between;
+    margin-top:52px;
+
+    font-size: 19px;
+    line-height: 24px;
   }
 
   @media (#{$desktop-width}){
@@ -71,24 +79,42 @@
     background-image:url(/img/icon-feature-5.svg);
     background-position: 8px 2px;
     order:4;
+
+    @media (#{$tablet-width}){
+      background-position: 8px 4px;
+    }
   }
   &--handmade{
     background-image:url(/img/icon-feature-2.svg);
     background-position: 4px 0;
     order:1;
+
+    @media (#{$tablet-width}){
+      background-position: 4px 2px;
+    }
   }
   &--support{
     background-image:url(/img/icon-feature-4.svg);
     order:3;
+
+    @media (#{$tablet-width}){
+      background-position: 0 3px;
+    }
   }
   &--present{
     background-image:url(/img/icon-feature-6.svg);
     background-position: 3px 0;
     order:5;
+
+    @media (#{$tablet-width}){
+      background-position: 3px 1px;
+    }
   }
 
   @media (#{$tablet-width}){
-    width:45%;
+    width:50%;
+    padding-top: 53px;
+    padding-bottom: 54px;
   }
 
   @media (#{$desktop-width}){
