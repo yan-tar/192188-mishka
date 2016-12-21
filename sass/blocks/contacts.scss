@@ -33,8 +33,9 @@
 
 .contacts__title{
   @include h2-title;
-  margin-top: 35px;
+  margin-top: 39px;
   font-size:18px;
+
   @media (#{$tablet-width}){
     height:81px;
     font-size:43px;
@@ -49,7 +50,7 @@
 }
 
 .contacts__info{
-  margin-top:30px;
+  margin-top:27px;
 
   font-size:15px;
   line-height:30px;
@@ -75,11 +76,12 @@
 .contacts__str dt {
   display:inline-block;
   vertical-align:top;
-  min-width:50px;
+  min-width:67px;
 }
 .contacts__str dd {
   display:inline-block;
   vertical-align:top;
+  margin-left:10px;
 }
 
 
@@ -97,8 +99,8 @@
 }
 
 .contacts__map {
-  margin:40px 0;
-  height:450px;
+  margin:37px 0;
+  height:455px;
   background-color: #f3f1ea;
   background:url(/img/map-mobile@1x.jpg) no-repeat 0 0;
   background-size:100%;

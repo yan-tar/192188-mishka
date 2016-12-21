@@ -20,7 +20,7 @@
 
 .about-us__title{
   @include h2-title;
-  margin-top:30px;
+  margin-top:29px;
 
   @media (#{$tablet-width}){
     margin-top:57px;
@@ -34,6 +34,8 @@
 .about-us__list {
   color: $title-color;
   padding:0;
+  margin-top:33px;
+
   font-family: $opensansbold;
   font-size: 17px;
   line-height: 20px;
@@ -53,21 +55,26 @@
 .about-us__item{
   list-style:none;
   padding-top: 52px;
-  padding-bottom: 30px;
+  padding-bottom: 31px;
   background-position:0 0;
   background-repeat:no-repeat;
 
-  &--eco{ background-image:url(/img/icon-feature-1.svg);}
+  &--eco{
+    background-image:url(/img/icon-feature-1.svg);
+    background-position: 8px 0;
+  }
   &--scandinavian{
     background-image:url(/img/icon-feature-3.svg);
     order:2;
   }
   &--likes{
     background-image:url(/img/icon-feature-5.svg);
+    background-position: 8px 2px;
     order:4;
   }
   &--handmade{
     background-image:url(/img/icon-feature-2.svg);
+    background-position: 4px 0;
     order:1;
   }
   &--support{
@@ -76,6 +83,7 @@
   }
   &--present{
     background-image:url(/img/icon-feature-6.svg);
+    background-position: 3px 0;
     order:5;
   }
 

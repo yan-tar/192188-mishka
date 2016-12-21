@@ -26,6 +26,7 @@
 
 .reviews__title{
   @include h2-title;
+  margin-top:24px;
 
   @media (#{$tablet-width}){
     font-size:43px;
@@ -41,7 +42,7 @@
 }
 
 .reviews__text blockquote {
-  margin:0;
+  margin:24px 0 23px;
   font-size:15px;
   line-height: 30px;
   @media (#{$tablet-width}){
@@ -61,7 +62,7 @@
 }
 
 .reviews__nav {
-  margin: 35px auto;
+  margin: 30px auto 35px;
   height:52px;
   font-size:0;
 
