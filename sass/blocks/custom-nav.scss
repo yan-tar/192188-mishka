@@ -1,6 +1,6 @@
 .custom-nav {
   @media (#{$tablet-width}){
-    flex-basis:334px;
+    flex-basis:348px;
     height:89px;
     order:1;
     margin-left:auto;
@@ -47,7 +47,7 @@
     no-repeat 5% 50%;
 
     @media (#{$tablet-width}){
-      width:88px;
+      width:85px;
       overflow:none;
       border-left:1px solid $border-color;
       border-right:1px solid $border-color;
@@ -64,13 +64,13 @@
 
     @media (#{$tablet-width}){
       height:89px;
-      font-size:15px;
+      padding-left: 81px;
+      font-size:16px;
+      line-height:82px;
       background:url(/img/icon-cart.svg) no-repeat 31px 50%;
     }
     @media (#{$desktop-width}){
       line-height:83px;
-      font-size:16px;
-          padding-left: 81px;
     }
   }
 }

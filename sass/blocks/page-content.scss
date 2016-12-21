@@ -2,14 +2,15 @@
   margin:0;
   padding:0 0 5px;
   background-color: #f1f1f1;
+  text-align:center;
+
+  font-family:$opensansbold;
+  font-weight: bold;
   font-size: 27px;
   line-height:170px;
   color: $title-color;
-  text-align:center;
 
   @media (#{$tablet-width}){
-    font-family:$opensansbold;
-    font-weight: bold;
     padding: 5px 0 0;
     line-height: 221px;
     font-size: 42px;

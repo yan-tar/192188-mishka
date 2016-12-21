@@ -1,0 +1,118 @@
+.production {
+  list-style-type: none;
+  margin-top:32px;
+  border-top:1px solid #ececec;
+  border-bottom:1px solid #ececec;
+  @media (#{$tablet-width}){
+    display:flex;
+    flex-direction:column;
+    margin-top:53px;
+  }
+  @media (#{$desktop-width}){
+    flex-wrap: wrap;
+    justify-content: space-between;
+    flex-grow:1;
+    height:467px;
+  }
+}
+
+.production__video {
+  width:260px;
+  height:150px;
+  position:relative;
+
+  background: url(/img/video-mobile@1x.jpg) no-repeat 0 0;
+  @media (#{$tablet-width}){
+    width:668px;
+    height:455px;
+    order:0;
+  }
+  @media (#{$desktop-width}){
+    width:682px;
+    flex-basis: 682px;
+    flex-grow:1;
+  }
+}
+
+.production__play-btn {
+  position:absolute;
+  top:70px;
+  left: 100px;
+}
+
+.production__video-title{
+  font-size: 17px;
+  line-height: 24px;
+  color:$title-color;
+  margin-top:23px;
+  margin-bottom:24px;
+  padding-left:91px;
+  background:url(/img/icon-video.svg) no-repeat 34px 50%;
+
+  @media (#{$tablet-width}){
+    margin:0;
+    padding:38px 48px 32px 105px;
+    border:1px solid $border-color;
+    border-bottom:none;
+    font-size:20px;
+
+    order:1;
+
+    background-position: 40px 50%;
+  }
+  @media (#{$desktop-width}){
+    width: 155px;
+    margin-left:78px;
+    padding-left:0;
+    padding-top: 55px;
+    background-position: 0 0;
+    margin-top:40px;
+  }
+}
+
+.production__order{
+  list-style-type: none;
+}
+
+.production__video-desc{
+  @media (#{$tablet-width}){
+    border:1px solid $border-color;
+    border-top:none;
+    border-bottom:none;
+    order:2;
+  }
+  @media (#{$desktop-width}){
+  }
+}
+
+.production__video-text{
+  font-size: 13px;
+  line-height: 24px;
+  font-family: $opensans;
+  margin:27px 34px 25px;
+  width:192px;
+
+
+  @media (#{$tablet-width}){
+    width:auto;
+    margin:0 40px;
+
+    font-size: 15px;
+    line-height:30px;
+  }
+  @media (#{$desktop-width}){
+    width: 230px;
+    margin-left:78px;
+    padding-left:0;
+    padding-top: 0;
+  }
+}
+
+.production__order-btn{
+  width:192px;
+  margin:23px 34px 30px;
+  @media (#{$tablet-width}){
+    width:auto;
+    margin:30px 40px 45px;
+  }
+}
