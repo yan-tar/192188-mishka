@@ -10,9 +10,10 @@
   }
   @media (#{$desktop-width}){
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: flex-start;
     flex-grow:1;
-    height:467px;
+    height:457px;
+    border:none;
   }
 }
 
@@ -22,10 +23,12 @@
   position:relative;
 
   background: url(/img/video-mobile@1x.jpg) no-repeat 0 0;
+
   @media (#{$tablet-width}){
     width:668px;
     height:455px;
     order:0;
+    background-size: cover;
   }
   @media (#{$desktop-width}){
     width:682px;
@@ -38,6 +41,15 @@
   position:absolute;
   top:70px;
   left: 100px;
+
+  @media (#{$tablet-width}){
+    top: 194px;
+    left: 283px;
+  }
+  @media (#{$desktop-width}){
+    top: 194px;
+    left: 300px;
+  }
 }
 
 .production__video-title{
@@ -62,11 +74,9 @@
   }
   @media (#{$desktop-width}){
     width: 155px;
-    margin-left:78px;
-    padding-left:0;
-    padding-top: 55px;
-    background-position: 0 0;
-    margin-top:40px;
+    margin: 0;
+    padding: 97px 134px 0 77px;
+    background-position: 79px 43px;
   }
 }
 
@@ -82,6 +92,12 @@
     order:2;
   }
   @media (#{$desktop-width}){
+    border:1px solid $border-color;
+    border-top:none;
+    display:flex;
+    flex-direction:column;
+    height:310px;
+    justify-content: space-between;
   }
 }
 
@@ -92,7 +108,6 @@
   margin:27px 34px 25px;
   width:192px;
 
-
   @media (#{$tablet-width}){
     width:auto;
     margin:0 40px;
@@ -102,9 +117,10 @@
   }
   @media (#{$desktop-width}){
     width: 230px;
-    margin-left:78px;
+    margin-left:77px;
+    margin-top:30px;
     padding-left:0;
-    padding-top: 0;
+    padding-top: 3px;
   }
 }
 
@@ -114,5 +130,9 @@
   @media (#{$tablet-width}){
     width:auto;
     margin:30px 40px 45px;
+  }
+  @media (#{$desktop-width}){
+    align-self: stretch;
+    margin: 0 59px 55px;
   }
 }
