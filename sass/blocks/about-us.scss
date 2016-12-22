@@ -68,15 +68,15 @@
   background-repeat:no-repeat;
 
   &--eco{
-    background-image:url(/img/icon-feature-1.svg);
+    background-image:url(../img/icon-feature-1.svg);
     background-position: 8px 0;
   }
   &--scandinavian{
-    background-image:url(/img/icon-feature-3.svg);
+    background-image:url(../img/icon-feature-3.svg);
     order:2;
   }
   &--likes{
-    background-image:url(/img/icon-feature-5.svg);
+    background-image:url(../img/icon-feature-5.svg);
     background-position: 8px 2px;
     order:4;
 
@@ -85,7 +85,7 @@
     }
   }
   &--handmade{
-    background-image:url(/img/icon-feature-2.svg);
+    background-image:url(../img/icon-feature-2.svg);
     background-position: 4px 0;
     order:1;
 
@@ -94,7 +94,7 @@
     }
   }
   &--support{
-    background-image:url(/img/icon-feature-4.svg);
+    background-image:url(../img/icon-feature-4.svg);
     order:3;
 
     @media (#{$tablet-width}){
@@ -102,7 +102,7 @@
     }
   }
   &--present{
-    background-image:url(/img/icon-feature-6.svg);
+    background-image:url(../img/icon-feature-6.svg);
     background-position: 3px 0;
     order:5;
 

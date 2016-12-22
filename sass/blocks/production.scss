@@ -22,7 +22,7 @@
   height:150px;
   position:relative;
 
-  background: url(/img/video-mobile@1x.jpg) no-repeat 0 0;
+  background: url(../img/video-mobile@1x.jpg) no-repeat 0 0;
 
   @media (#{$tablet-width}){
     width:668px;
@@ -63,7 +63,7 @@
   margin-top:23px;
   margin-bottom:24px;
   padding-left:91px;
-  background:url(/img/icon-video.svg) no-repeat 34px 50%;
+  background:url(../img/icon-video.svg) no-repeat 34px 50%;
 
   @media (#{$tablet-width}){
     margin:0;

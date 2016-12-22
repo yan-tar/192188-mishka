@@ -43,7 +43,7 @@
   }
 
   &--search {
-    background:url(/img/icon-search.svg)
+    background:url(,,/img/icon-search.svg)
     no-repeat 5% 50%;
 
     @media (#{$tablet-width}){
@@ -52,7 +52,7 @@
       border-left:1px solid $border-color;
       border-right:1px solid $border-color;
       box-sizing:border-box;
-      background:url(/img/icon-search.svg)
+      background:url(../img/icon-search.svg)
       no-repeat 50% 50%;
     }
     @media (#{$desktop-width}){
@@ -60,14 +60,14 @@
     }
   }
   &--cart {
-    background:url(/img/icon-cart.svg) no-repeat 5% 50%;
+    background:url(../img/icon-cart.svg) no-repeat 5% 50%;
 
     @media (#{$tablet-width}){
       height:89px;
       padding-left: 81px;
       font-size:16px;
       line-height:82px;
-      background:url(/img/icon-cart.svg) no-repeat 31px 50%;
+      background:url(../img/icon-cart.svg) no-repeat 31px 50%;
     }
     @media (#{$desktop-width}){
       line-height:83px;

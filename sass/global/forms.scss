@@ -267,7 +267,7 @@
 }
 
 .mishka-form__checkbox:checked + label:before {
-    background: url(/img/icon-tick.svg) no-repeat 5px 9px;
+    background: url(../img/icon-tick.svg) no-repeat 5px 9px;
     background-size:70%;
     @media (#{$tablet-width}){
       background-position: 9px 12px;
@@ -311,7 +311,7 @@
   }
 
   &[type="email"]{
-    background:url(/img/icon-mail.svg)
+    background:url(../img/icon-mail.svg)
       no-repeat
       450px 80%;
 
@@ -324,7 +324,7 @@
   }
   &[type="tel"]{
     border-bottom:2px solid #000;
-    background:url(/img/icon-phone.svg)
+    background:url(../img/icon-phone.svg)
       no-repeat
       450px 50%;
 

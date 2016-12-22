@@ -59,7 +59,7 @@
     font-size:43px;
     line-height:81px;
 
-    background:url(/img/icon-flag.svg) no-repeat right 0;
+    background:url(../img/icon-flag.svg) no-repeat right 0;
     background-size:47px 81px;
   }
   @media (#{$desktop-width}){
@@ -130,7 +130,7 @@
   margin:37px 0;
   height:455px;
   background-color: #f3f1ea;
-  background:url(/img/map-mobile@1x.jpg) no-repeat 0 0;
+  background:url(../img/map-mobile@1x.jpg) no-repeat 0 0;
   background-size:cover;
   border:1px solid $border-color; /*временно, для сетки*/
 
