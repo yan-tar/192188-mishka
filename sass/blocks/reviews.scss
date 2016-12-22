@@ -2,9 +2,8 @@
   color: $main-color;
   padding-bottom:16px;
 
-  @media (#{$tablet-width}){
-    padding-top:85px;
-    padding-bottom:121px;
+  @media (#{$desktop-width}){
+    padding-top:10px;
   }
 }
 
@@ -16,36 +15,58 @@
 
   @media (#{$tablet-width}){
     position:relative;
-    padding-right:0;
-    padding-left:0;
+    padding-left:$tab-pad-side;
+    padding-right:$tab-pad-side;
+    padding-top:85px;
+    padding-bottom:121px;
+
+    background: url(../img/review@1x.jpg) no-repeat 0 0;
   }
   @media (#{$desktop-width}){
+    padding-top:76px;
     padding-left:175px;
+    padding-bottom:145px;
   }
 }
 
 .reviews__title{
   @include h2-title;
+  margin-top:24px;
 
   @media (#{$tablet-width}){
+    margin-right:175px;
+    margin-top:0;
     font-size:43px;
     line-height:50px;
-    margin-right:175px;
+  }
+  @media (#{$desktop-width}){
+    font-size:52px;
+    line-height:52px;
   }
 }
 
 .reviews__text{
   @media (#{$tablet-width}){
+    margin-top: 47px;
+    font-size: 16px;
+  }
+  @media (#{$desktop-width}){
     margin-top: 53px;
   }
 }
 
 .reviews__text blockquote {
-  margin:0;
+  margin:24px 0 23px;
   font-size:15px;
   line-height: 30px;
+
   @media (#{$tablet-width}){
-    margin-bottom: 60px;
+    height: 155px;
+    margin-bottom: 20px;
+    font-size:16px;
+  }
+  @media (#{$desktop-width}){
+    height:105px;
   }
 }
 
@@ -61,17 +82,21 @@
 }
 
 .reviews__nav {
-  margin: 35px auto;
+  margin: 30px auto 35px;
   height:52px;
   font-size:0;
 
   @media (#{$tablet-width}){
     position:absolute;
-    right:0;
-    bottom:0;
+    right:68px;
+    bottom:125px;
 
-    width:175px;
-    margin-top:0;margin-bottom:0;
+    width:140px;
+    margin:0;
+  }
+  @media (#{$desktop-width}){
+    right:17px;
+    bottom:148px;
   }
 }
 .reviews__controls {
@@ -82,12 +107,12 @@
   border:1px solid #ececec;
 
   &--prev{
-    background:url(/img/icon-left-arrow.svg) no-repeat 50% 50%;
+    background:url(../img/icon-left-arrow.svg) no-repeat 50% 50%;
     float:left;
   }
 
   &--next{
-    background:url(/img/icon-right-arrow.svg) no-repeat 50% 50%;
+    background:url(../img/icon-right-arrow.svg) no-repeat 50% 50%;
     margin-left:-1px;
     float:right;
   }
@@ -101,11 +126,15 @@
 .reviews__button{
   @media (#{$tablet-width}){
     position:absolute;
-    right:0;
-    top:0;
+    right:50px;
+    top:85px;
 
     width:175px;
     height:52px;
     margin-top:0;margin-bottom:0;
+  }
+  @media (#{$desktop-width}){
+    right:0;
+    top:83px;
   }
 }

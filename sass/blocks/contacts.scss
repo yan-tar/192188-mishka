@@ -1,65 +1,91 @@
 .contacts {
   border-top: $wavy;
   padding-bottom:10px;
+
   @media (#{$tablet-width}){
-    padding-bottom:30px;
-    padding-top:40px;
+    padding-top:29px;
+    padding-bottom:26px;
   }
   @media (#{$desktop-width}){
-    flex-wrap:wrap;
+    padding-top:94px;
+    padding-bottom:105px;
+  }
+}
+.contacts__wrapper{
+  @media (#{$desktop-width}){
     display:flex;
+    flex-direction: column;
+    flex-wrap:wrap;
+    justify-content: space-between;
+    align-content: center;
+    height:458px;
+    width: 1150px;
+    margin:0 auto;
   }
 }
 
-.contacts__wrapper {
+.contacts__inner {
   @include container;
   box-sizing:border-box;
   padding-left:$mob-pad-side;
   padding-right:$mob-pad-side;
   @media (#{$tablet-width}){
-    padding-left:0;
-    padding-right:0;
+    padding-left:$tab-pad-side;
+    padding-right:$tab-pad-side;
   }
   @media (#{$desktop-width}){
-    width:520px;
+    width:530px;
+    margin:0;
+    padding-left:67px;
+    padding-right:10px;
   }
 }
 
-.contacts__wrapper:last-child {
+.contacts__inner:last-child {
   @media (#{$desktop-width}){
-    width:1050px;
+    order:1;
   }
 }
 
 .contacts__title{
   @include h2-title;
-  margin-top: 35px;
+  margin-top: 39px;
   font-size:18px;
+
   @media (#{$tablet-width}){
     height:81px;
+    margin-top:10px;
+
     font-size:43px;
     line-height:81px;
-    background:url(/img/icon-flag.svg) no-repeat right 0;
+
+    background:url(../img/icon-flag.svg) no-repeat right 0;
     background-size:47px 81px;
   }
   @media (#{$desktop-width}){
-    padding-left:175px;
+    margin-top:59px;
+    padding-left:108px;
     background-position:left top;
+    font-size:54px;
   }
 }
 
 .contacts__info{
-  margin-top:30px;
+  margin-top:27px;
 
   font-size:15px;
   line-height:30px;
   color:$main-color;
+
   @media (#{$tablet-width}){
     display:flex;
+    margin-top: 33px;
   }
   @media (#{$desktop-width}){
-    padding-left:175px;
     flex-direction:column;
+
+    margin-top: 36px;
+    padding-left:113px;
   }
 }
 
@@ -70,16 +96,20 @@
     width:48%;
     padding-right:2%;
   }
+  @media (#{$desktop-width}){
+    width:auto;
+  }
 }
 
 .contacts__str dt {
   display:inline-block;
   vertical-align:top;
-  min-width:50px;
+  min-width:67px;
 }
 .contacts__str dd {
   display:inline-block;
   vertical-align:top;
+  margin-left:10px;
 }
 
 
@@ -97,26 +127,35 @@
 }
 
 .contacts__map {
-  margin:40px 0;
-  height:450px;
+  margin:37px 0;
+  height:455px;
   background-color: #f3f1ea;
-  background:url(/img/map-mobile@1x.jpg) no-repeat 0 0;
-  background-size:100%;
+  background:url(../img/map-mobile@1x.jpg) no-repeat 0 0;
+  background-size:cover;
   border:1px solid $border-color; /*временно, для сетки*/
+
   @media (#{$tablet-width}){
-    margin-bottom:55px;
+    margin-top:27px;
+    margin-bottom:42px;
+    height:468px;
   }
   @media (#{$desktop-width}){
+    align-self: stretch;
     width:525px;
-    background:none;
+    margin:0;
+    order:2;
   }
-
 }
 
 .contacts__write-us{
   @media (#{$tablet-width}){
-    width:260px;
+    width:230px;
     margin-left:auto;
     margin-right:auto;
+  }
+  @media (#{$desktop-width}){
+    margin-top:0;
+    margin-bottom:0;
+    line-height:49px;
   }
 }

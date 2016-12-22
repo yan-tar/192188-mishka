@@ -1,30 +1,49 @@
 .order-knit{
-  margin-bottom:55px;
-  color:$main-color;
+  @media (#{$desktop-width}){
+    margin-top: 125px;
+  }
 }
+
 .order-knit__wrapper{
   @include container;
 }
 
 .order-knit__simple-text {
-  width:260px;
-  margin:30px 0 30px $mob-pad-side;
+  margin:22px 0 32px $mob-pad-side;
   font-family: $opensans;
   font-size: 13px;
   line-height: 24px;
-}
-.order-knit__personal-label {
-  margin:20px 0 0;
+
+  @media (#{$tablet-width}){
+    margin:70px $tab-pad-side 32px $tab-pad-side;
+    font-size: 16px;
+    line-height: 30px;
+  }
+
+  @media (#{$desktop-width}){
+    margin-left: 175px;
+    margin-right: 180px;
+  }
 }
 
 .order-knit__prim{
-  margin-left:$mob-pad-side;
   width:260px;
+  margin-left:$mob-pad-side;
+  margin-top:10px;
   font-size: 14px;
   line-height: 16px;
-}
 
-.order-knit__btn{
-  margin-left:$mob-pad-side;
-  width:260px;
+  @media (#{$tablet-width}){
+    width:auto;
+    float:right;
+    margin-top:15px;
+    margin-right:$tab-pad-side;
+    text-align:right;
+
+    font-size:17px;
+    line-height: 20px;
+  }
+  @media (#{$desktop-width}){
+    margin-right: 175px;
+  }
 }

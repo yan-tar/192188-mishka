@@ -1,6 +1,5 @@
 .home-main {
   background-color: #fbfbfb;
-  margin-bottom:33px;
 }
 .home-main__wrapper {
   @include container;
@@ -20,7 +19,7 @@
   font-size:27px;
   line-height:30px;
   text-align:center;
-  background:url(/img/hero-mobile@1x.jpg)
+  background:url(../img/hero-mobile@1x.jpg)
     no-repeat 50% 0;
 
   @media (#{$tablet-width}){
@@ -75,12 +74,12 @@
   line-height:24px;
 
   &--int {
-    background:#63d1bb url(/img/icon-interior.svg)
+    background:#63d1bb url(../img/icon-interior.svg)
     no-repeat 90% 50%;
   }
 
   &--toys {
-    background:#56c3b2 url(/img/icon-toy.svg)
+    background:#56c3b2 url(../img/icon-toy.svg)
     no-repeat 90% 50%;
   }
   &:hover {
@@ -90,6 +89,7 @@
   @media (#{$tablet-width}){
     height:73px;
     &:hover {
+      margin-top:-10px;
       height:83px;
     }
   }

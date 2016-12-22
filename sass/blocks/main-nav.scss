@@ -4,16 +4,17 @@
     height:40px; /*временно для сетки*/
     flex-basis:334px;
     order:2;
+    z-index:1;
   }
 
   @media (#{$desktop-width}){
-    height:89px;
-    flex-basis:350px;
+    height:88px;
+    flex-basis:377px;
     order:0;
   }
 }
 .main-nav__toggle {
-  background:#fff url(/img/icon-menu-close.svg) no-repeat 50%;
+  background:#fff url(../img/icon-menu-close.svg) no-repeat 50%;
   border:none;
   width: 20px;
   height:14px;
@@ -48,6 +49,7 @@
     align-items:stretch;
   }
 }
+
 .main-nav__item {
   margin:0;
   padding-left:76px;
@@ -76,9 +78,19 @@
     height:89px;
     width:175px;
 
-    line-height:89px;
-    font-size:15px;
+    line-height:79px;
+    font-size:16px;
     align-self:stretch;
+
+    &:first-child {
+      border-right:1px solid $border-color;
+    }
+    &:nth-child(odd) {
+      padding-right:9px;
+    }
+    &:nth-child(even) {
+      padding-left: 15px;
+    }
   }
 }
 
@@ -89,7 +101,7 @@
 
   @media (#{$desktop-width}){
     display:block;
-    line-height:24px;
+    line-height:56px;
     height:24px;
     font-size:15px;
     font-family:$opensans;

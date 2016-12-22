@@ -8,11 +8,20 @@
 
 .page-footer__wrapper{
   @include container;
+
   @media (#{$tablet-width}){
+    box-sizing:border-box;
+    padding-left:$tab-pad-side;
+    padding-right:$tab-pad-side;
     height: 84px;
     display:flex;
     justify-content: space-between;
     align-items: center;
+  }
+
+  @media (#{$desktop-width}){
+    padding-left:0;
+    padding-right:0;
   }
 }
 
@@ -20,6 +29,7 @@
   display:none;
   @media (#{$tablet-width}){
     display:block;
+    width:105px;
   }
 }
 
@@ -30,7 +40,12 @@
 
   text-align:center;
   @media (#{$tablet-width}){
-    margin:0;
+    width: 175px;
+    margin:5px 0 0 66px;
+  }
+  @media (#{$desktop-width}){
+    width: 180px;
+    margin-left: 85px;
   }
 }
 
@@ -40,6 +55,13 @@
   vertical-align:middle;
   margin:0;
   padding:0;
+
+  @media (#{$tablet-width}){
+    padding-left:5px;
+  }
+  @media (#{$desktop-width}){
+    padding: 0 0 0 5px;
+  }
 }
 
 .social__link {
@@ -48,15 +70,15 @@
   width:50px;
   height:30px;
   &--inst{
-    background:url(/img/icon-insta.svg) no-repeat 50% 50%;
+    background:url(../img/icon-insta.svg) no-repeat 50% 50%;
   }
 
   &--fb{
-    background:url(/img/icon-fb.svg) no-repeat 50% 50%;
+    background:url(../img/icon-fb.svg) no-repeat 50% 50%;
   }
 
   &--tw{
-    background:url(/img/icon-twitter.svg) no-repeat 50% 50%;
+    background:url(../img/icon-twitter.svg) no-repeat 50% 50%;
   }
 }
 
@@ -68,6 +90,7 @@
   font-weight:bold;
   line-height:18px;
   padding-top:20px;
+
   @media (#{$tablet-width}){
     border:none;
     padding:0;
@@ -76,4 +99,7 @@
 
 .page-footer__academy-logo {
   vertical-align:middle;
+  @media (#{$tablet-width}){
+    padding-left:25px;
+  }
 }

@@ -1,12 +1,13 @@
 .custom-nav {
   @media (#{$tablet-width}){
-    flex-basis:334px;
+    flex-basis:348px;
     height:89px;
     order:1;
     margin-left:auto;
   }
 
   @media (#{$desktop-width}){
+    flex-basis:351px;
     order:2;
     margin-left:0;
   }
@@ -42,33 +43,40 @@
   }
 
   &--search {
-    background:url(/img/icon-search.svg)
+    background:url(,,/img/icon-search.svg)
     no-repeat 5% 50%;
 
     @media (#{$tablet-width}){
-      width:88px;
+      width:85px;
       overflow:none;
       border-left:1px solid $border-color;
       border-right:1px solid $border-color;
       box-sizing:border-box;
-      background:url(/img/icon-search.svg)
+      background:url(../img/icon-search.svg)
       no-repeat 50% 50%;
-
+    }
+    @media (#{$desktop-width}){
+      width:86px;
     }
   }
   &--cart {
-    background:url(/img/icon-cart.svg) no-repeat 5% 50%;
+    background:url(../img/icon-cart.svg) no-repeat 5% 50%;
 
     @media (#{$tablet-width}){
       height:89px;
-      font-size:15px;
-      background:url(/img/icon-cart.svg) no-repeat 31px 50%;
+      padding-left: 81px;
+      font-size:16px;
+      line-height:82px;
+      background:url(../img/icon-cart.svg) no-repeat 31px 50%;
+    }
+    @media (#{$desktop-width}){
+      line-height:83px;
     }
   }
 }
 
 .custom-nav__item--search a {
   @media (#{$tablet-width}){
-    font-size:0px; /*пока не понимаю, как скрыть текст*/
+    font-size:0px;
   }
 }
