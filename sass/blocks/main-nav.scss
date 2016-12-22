@@ -4,6 +4,7 @@
     height:40px; /*временно для сетки*/
     flex-basis:334px;
     order:2;
+    z-index:1;
   }
 
   @media (#{$desktop-width}){
