@@ -90,6 +90,7 @@
   @media (#{$tablet-width}){
     height:73px;
     &:hover {
+      margin-top:-10px;
       height:83px;
     }
   }
