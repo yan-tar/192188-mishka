@@ -21,6 +21,10 @@
     padding-bottom:121px;
 
     background: url(../img/review@1x.jpg) no-repeat 0 0;
+
+    @media (min-resolution: 144dpi), (min-resolution: 1.5dppx){
+      background: url(../img/review@2x.jpg) no-repeat 0 0;
+    }
   }
   @media (#{$desktop-width}){
     padding-top:76px;

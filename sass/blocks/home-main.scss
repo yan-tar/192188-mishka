@@ -21,15 +21,33 @@
   text-align:center;
   background:url(../img/hero-mobile@1x.jpg)
     no-repeat 50% 0;
+  @media (min-resolution: 144dpi), (min-resolution: 1.5dppx){
+    background:url(../img/hero-mobile@2x.jpg)
+    no-repeat 50% 0;
+  }
 
   @media (#{$tablet-width}){
     height:626px;
     padding-top:162px;
-    background-position: 50% 80px;
+
+    background:url(../img/hero-desktop@1x.jpg)
+    no-repeat 50% 80px;
     background-size:cover;
 
     font-size:43px;
     line-height:50px;
+
+    @media (min-resolution: 144dpi), (min-resolution: 1.5dppx){
+      background:url(../img/hero-desktop@2x.jpg)
+      no-repeat 50% 0;
+    }
+  }
+
+  @media (#{$desktop-width}){
+    @media (min-resolution: 144dpi), (min-resolution: 1.5dppx){
+      background:url(../img/hero-desktop@2x.jpg)
+      no-repeat 50% 0;
+    }
   }
 }
 

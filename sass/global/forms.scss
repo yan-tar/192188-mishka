@@ -212,6 +212,13 @@
     flex-basis:23%;
     margin:15px 0 19px;
   }
+  &:hover:before {
+    border-color: $accent-color;
+  }
+  &:active:before {
+    border-color: $main-color;
+    opacity:0.3;
+  }
 }
 
 .mishka-form__label-radio{
@@ -252,14 +259,18 @@
     margin-top:0;
     margin-bottom:34px;
   }
+  &:hover:before {
+    border-color: $accent-color;
+  }
+  &:active:before {
+    border-color: $main-color;
+    opacity:0.3;
+  }
 }
-
-
 
 .mishka-form__radio:checked + label:before {
     background-color: $accent-color;
     box-shadow: inset 0 0px 0px 7px #fff;
-    border-color: $accent-color;
 
     @media (#{$tablet-width}){
       box-shadow: inset 0 0px 0px 12px #fff;
@@ -310,6 +321,10 @@
     margin-right:175px;
   }
 
+  &:hover {
+    border-color: #62d1ba;
+  }
+
   &[type="email"]{
     background:url(../img/icon-mail.svg)
       no-repeat
@@ -338,6 +353,10 @@
   }
 
 
+  &:focus {
+    outline:none;
+  }
+
 }
 
 .mishka-form__label-text-wrapper {
@@ -365,16 +384,31 @@
     margin-top:10px;
     margin-right: $tab-pad-side;
     flex-grow:1;
+
   }
 
   @media (#{$desktop-width}){
     margin-right: 175px;
     padding:15px;
   }
+
+  &:hover{
+    border: 2px solid #62d1ba;
+  }
+  &:active {
+    border: 2px solid #62d1ba;
+  }
+  &:focus {
+    outline:none;
+  }
 }
 
 .mishka-form__textarea[placeholder] {
   @include fademe($main-color, 0.3);
+
+  &:active, &:focus {
+    color: $main-color;
+  }
 }
 
 .mishka-form__btn{
