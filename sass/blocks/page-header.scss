@@ -43,6 +43,44 @@
   width: 86px;
   margin:22px auto;
 }
+.page-header__logo-svg-mobile {
+  display:block;
+  @media (#{$tablet-width}){
+    display:none;
+  }
+}
+.page-header__logo-svg-tab-text {
+  display:none;
+  @media (#{$tablet-width}){
+    display:block;
+    fill:#fff;
+  }
+  @media (#{$desktop-width}){
+    display:none;
+  }
+}
+.page-header__logo-svg-bg {
+  display:none;
+  @media (#{$tablet-width}){
+    display:block;
+  }
+  @media (#{$desktop-width}){
+    display:none;
+  }
+}
+.page-header__logo-svg-bgsplash {
+  display:none;
+  @media (#{$desktop-width}){
+    display:block;
+  }
+}
+.page-header__logo-svg-text {
+  display:none;
+  @media (#{$desktop-width}){
+    display:block;
+    fill:white;
+  }
+}
 
 .page-header__shipping {
   display:none;

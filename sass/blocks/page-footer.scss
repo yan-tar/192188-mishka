@@ -33,6 +33,14 @@
   }
 }
 
+.page-footer__logo:hover .page-footer__logo-svg{
+  fill:#46c1ae;
+}
+
+.page-footer__logo:active .page-footer__logo-svg{
+  opacity:0.3;
+}
+
 .page-footer__social {
   width: 170px;
   margin:0 auto 30px;
@@ -95,11 +103,23 @@
     border:none;
     padding:0;
   }
+  &:active{
+    opacity:0.3;
+  }
 }
 
 .page-footer__academy-logo {
   vertical-align:middle;
+  fill: #63d1bb;
   @media (#{$tablet-width}){
     padding-left:25px;
   }
+}
+
+.page-footer__copyright:hover .page-footer__academy-logo{
+  fill:#46c1ae;
+}
+
+.page-footer__copyright:active .page-footer__academy-logo{
+  opacity:0.3;
 }
