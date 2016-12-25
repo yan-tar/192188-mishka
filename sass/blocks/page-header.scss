@@ -36,6 +36,13 @@
     flex-basis:320px;
     order:1;
   }
+
+  &:hover {
+    opacity:0.6;
+  }
+  &:active {
+    opacity:0.3;
+  }
 }
 
 .page-header__logo img {

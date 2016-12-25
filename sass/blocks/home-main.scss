@@ -1,6 +1,25 @@
 .home-main {
+  position:relative;
   background-color: #fbfbfb;
+  &::after {
+    position:absolute;
+    content:"";
+    width:100%;
+    bottom:0;
+    left:0;
+    @media (#{$tablet-width}){
+      height:12px;
+      background:url(../img/bg-zigzag-fill.svg) repeat-x 0 top;
+      background-size:auto 23px;
+    }
+    @media (#{$desktop-width}){
+      height:15px;
+      background:url(../img/bg-zigzag-fill.svg) repeat-x 0 top;
+      background-size:auto;
+    }
+  }
 }
+
 .home-main__wrapper {
   @include container;
   position:relative;
@@ -9,6 +28,7 @@
     height:745px;
   }
 }
+
 .home-main h1 {
   font-family:$opensansbold;
   margin:0;
@@ -60,6 +80,17 @@
     height:119px;
     display:flex;
     align-content:stretch;
+    margin-left: 50px;
+    margin-right: 50px;
+  }
+  @media (#{$tablet-width}){
+    &:after{
+      content:"";
+      z-index:1;
+      background-image: url(/img/bg-zigzag-fill.svg);
+      background-repeat: repeat-x;
+      background-position: 0 bottom;
+    }
   }
 }
 
@@ -92,23 +123,78 @@
   line-height:24px;
 
   &--int {
-    background:#63d1bb url(../img/icon-interior.svg)
-    no-repeat 90% 50%;
+    background-color:#63d1bb;
   }
 
   &--toys {
-    background:#56c3b2 url(../img/icon-toy.svg)
-    no-repeat 90% 50%;
+    background-color:#56c3b2;
   }
   &:hover {
     height:67px;
   }
 
   @media (#{$tablet-width}){
-    height:73px;
+    height:72px;
     &:hover {
-      margin-top:-10px;
-      height:83px;
+      margin-top:-5px;
+      height:77px;
     }
   }
+}
+
+.home-main__menu-icon {
+  position:absolute;
+  top:20px;
+  fill: #149080;
+  opacity:0.5;
+  right:24px;
+
+  &--int{
+    width:41px;
+    height:62px;
+    right:36px;
+    @media (#{$tablet-width}){
+      top:30px;
+      left:280px;
+    }
+    @media (#{$desktop-width}){
+      left:448px;
+    }
+  }
+
+  &--toys{
+    top:125px;
+    width:60px;
+    height:61px;
+    @media (#{$tablet-width}){
+      top:30px;
+      right:32px;
+    }
+    @media (#{$desktop-width}){
+      right:35px;
+    }
+  }
+}
+
+.home-main__menu-item:hover .home-main__menu-icon{
+  opacity: 0.7;
+  fill: #149080;
+  top:15px;
+
+  &--int{
+    @media (#{$tablet-width}){
+      top:25px;
+    }
+  }
+  &--toys{
+    top:120px;
+    @media (#{$tablet-width}){
+      top:25px;
+    }
+
+  }
+}
+
+.home-main__menu-item:active .home-main__menu-icon{
+  opacity:0.3;
 }

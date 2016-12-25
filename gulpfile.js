@@ -44,8 +44,8 @@ gulp.task("style", function() {
     ]))
     .pipe(gulp.dest("build/css"))
     .pipe(csso())
-    .pipe(rename("style.min.css"))
-    .pipe(gulp.dest("build/css"))
+    .pipe(rename("build/style.min.css"))
+    .pipe(gulp.dest("css"))
     .pipe(server.stream());
 });
 
@@ -87,8 +87,8 @@ gulp.task("copy", function() {
 });
 
 gulp.task("symbols", function() {
-  return gulp.src("build/img/icons/*.svg")
-   .pipe(svgmin())
+  return gulp.src("build/img/*.svg")
+    .pipe(svgmin())
     .pipe(svgstore({
       inlineSvg: true
     }))

@@ -108,6 +108,11 @@
   }
 }
 
+.page-footer__copyright a{
+  color: $main-color;
+  text-decoration:none;
+}
+
 .page-footer__academy-logo {
   vertical-align:middle;
   fill: #63d1bb;

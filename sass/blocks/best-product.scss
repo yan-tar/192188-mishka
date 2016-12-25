@@ -1,7 +1,14 @@
 .best-product {
   color: $main-color;
   padding-bottom:7px;
-  border-bottom: $wavy;
+  background:url(../img/bg-zigzag-line.svg) repeat-x 0 bottom;
+  background-size: auto 10px;
+  @media (#{$tablet-width}){
+    background-size:auto 18px;
+  }
+  @media (#{$desktop-width}){
+    background-size:auto 20px;
+  }
 }
 
 .best-product__wrapper {
@@ -17,7 +24,7 @@
     padding-left:49px;
     padding-right:51px;
     margin-top:30px;
-    margin-bottom:51px;
+    margin-bottom:63px;
   }
 
   @media (#{$desktop-width}){
@@ -78,22 +85,26 @@
 }
 
 .best-product__text{
+  order:0;
   @media (#{$tablet-width}){
     margin-top: 49px;
     margin-right:40px;
+    width:43%;
   }
   @media (#{$desktop-width}){
     margin-left:148px;
     margin-top: 41px;
+    width:300px;
   }
 }
 
 .best-product__inner{
-  @media (#{$tablet-width}){
     display:flex;
     flex-direction:column;
+  @media (#{$tablet-width}){
     justify-content:space-between;
 
+    position: relative;
     height:460px;
   }
   @media (#{$desktop-width}){
@@ -123,7 +134,7 @@
     margin-right:0;
     width:290px;
   }
-  @media (#{$tablet-width}){
+  @media (#{$desktop-width}){
     margin-top:23px;
   }
 }
@@ -149,25 +160,39 @@
   margin:0;
 }
 
+.best-product__picture{
+  order:1;
+  margin: 13px 0 21px;
+
+  @media (#{$tablet-width}){
+    position: absolute;
+    top: 43px;
+    right: 0;
+    z-index: -1;
+  }
+  @media (#{$desktop-width}){
+    top:-139px;
+  }
+}
+
 .best-product__pic{
   box-sizing:content-box;
   text-align:center;
-  margin: 13px 0 25px;
   background-color:#f1f1f1;
 
   order:1;
 
   @media (#{$tablet-width}){
-    float:right;
-    width: 333px;
-    height: 404px;
-    margin-bottom:0;
-    margin-top:57px;
+   // float:right;
+   // width: 333px;
+   // height: 404px;
+   // margin-bottom:0;
+   // margin-top:57px;
   }
   @media (#{$desktop-width}){
-    margin-top:-117px;
-    width:525px;
-    height:636px;
+   // margin-top:-117px;
+   // width:525px;
+   // height:636px;
     // position:absolute;
     // top:0;
     // right:0;
@@ -179,6 +204,7 @@
   order:2;
 
   @media (#{$tablet-width}){
+    width:290px;
     margin-right:40px;
     font-size:20px;
   }

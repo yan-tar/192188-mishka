@@ -1,9 +1,11 @@
 .contacts {
-  border-top: $wavy;
+  padding-top:40px;
   padding-bottom:10px;
+  background: url(../img/bg-zigzag-line.svg) repeat-x 0 top;
+  background-size:100%;
 
   @media (#{$tablet-width}){
-    padding-top:29px;
+    padding-top:51px;
     padding-bottom:26px;
   }
   @media (#{$desktop-width}){
@@ -11,6 +13,7 @@
     padding-bottom:105px;
   }
 }
+
 .contacts__wrapper{
   @media (#{$desktop-width}){
     display:flex;
@@ -49,12 +52,12 @@
 
 .contacts__title{
   @include h2-title;
-  margin-top: 39px;
+  margin-top: 2px;
   font-size:18px;
 
   @media (#{$tablet-width}){
     height:81px;
-    margin-top:10px;
+    margin-top:12px;
 
     font-size:43px;
     line-height:81px;
@@ -62,11 +65,13 @@
     background:url(../img/icon-flag.svg) no-repeat right 0;
     background-size:47px 81px;
   }
+
   @media (#{$desktop-width}){
     margin-top:59px;
     padding-left:108px;
     background-position:left top;
     font-size:54px;
+    line-height:80px;
   }
 }
 
@@ -79,7 +84,7 @@
 
   @media (#{$tablet-width}){
     display:flex;
-    margin-top: 33px;
+    margin-top: 34px;
   }
   @media (#{$desktop-width}){
     flex-direction:column;
@@ -127,7 +132,8 @@
 }
 
 .contacts__map {
-  margin:37px 0;
+  width:320px;
+  margin:37px auto;
   height:455px;
   background-color: #f3f1ea;
   background:url(../img/map-mobile@1x.jpg) no-repeat 0 0;
@@ -138,6 +144,7 @@
   }
 
   @media (#{$tablet-width}){
+    width:768px;
     margin-top:27px;
     margin-bottom:42px;
     height:468px;
